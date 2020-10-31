@@ -1,7 +1,7 @@
 package com.library.pages;
 
-import com.vytrack.utilities.BrowserUtils;
-import com.vytrack.utilities.Driver;
+import com.library.utilities.BrowserUtils;
+import com.library.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
