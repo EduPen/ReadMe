@@ -10,7 +10,8 @@ public class DashboardPage extends BasePage {
 
     public DashboardPage(){
 
-        PageFactory.initElements(Driver.get(),this);
+        PageFactory.initElements(Driver.get(),
+                this);
     }
 
     @FindBy(xpath = "//img[@class='d-inline-block align-top']")
