@@ -6,15 +6,12 @@ Feature:  verify login
   Scenario: verify role login
     Given the user is on the login page
     When user login as “usertype”
-    Then title contains “page”
-
-
-Feature:
+    Then title contains “pag
 
 
   @EUG16-259
 
-  Scenario Outline:
+  Scenario Outline: user login to page
     Given the user is on the login page
     When user enter <email> and enter <password>
     Then user logged in page
