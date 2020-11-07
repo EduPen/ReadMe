@@ -3,7 +3,6 @@ Feature:  verify login
 
   @EUG16-257
   Scenario: User Login scenario
-  Scenario: verify role login
     Given the user is on the login page
     When user login as “usertype”
     Then title contains “pag
