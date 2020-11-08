@@ -10,10 +10,10 @@ import org.junit.runner.RunWith;
                     "html:target/default-html-reports",
                     "rerun:target/rerun.txt"
                    },
-        features =  "src/test/resources/features/",
+        features =  "src/test/resources/features",
         glue     =  "com/library/step_definitions",
-        dryRun   = false,
-        tags     = "@login"
+        dryRun   = true,
+        tags     = "@Dash"
 )
 
 public class CukesRunner{

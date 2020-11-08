@@ -4,8 +4,8 @@ Feature:Creating user on  users page
   Scenario: add users with valid info
     Given the user is on the login page
     When user login as "usertype"
-    And navigate to "users module"
-    And click "Add User"
+    And navigate to users module
+    And click Add User
     And creates new user using following information
       | Full Name  | Mike Smith                       |
       | Email      | mikesmith@email.com              |
@@ -20,9 +20,9 @@ Feature:Creating user on  users page
   @EUG16-254 @EUG16-224
   Scenario: Closing the adding user
     Given the user is on the login page
-    When user login as "usertype".
-    And navigate to "users module"
-    And click "Add User"
+    When user login as "usertype"
+    And navigate to users module
+    And click Add User
     And click close button
     Then verify closing the “adding”
 
@@ -30,7 +30,7 @@ Feature:Creating user on  users page
   Scenario: edit user info
     Given the user is on the login page
     When user login as "usertype"
-    And click "Edit User"
+    And click Edit User
     And do some valid changes
 
       | Full Name | Smith Mike          |
@@ -42,6 +42,6 @@ Feature:Creating user on  users page
   Scenario: Closing the editing user
     Given the user is on the login page
     When user login as "usertype"
-    And click "Edit User"
+    And click Edit User
     And click close button
-    Then verify closing the “editing
+    Then verify closing the editing

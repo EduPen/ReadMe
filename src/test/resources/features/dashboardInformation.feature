@@ -1,4 +1,5 @@
-Feature:
+@Dash
+Feature: hello
 
 	#User Story:
 	#As a librarian, I should able to see total books, users and borrowed books information on the Dashboard page
