@@ -1,0 +1,453 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-08T16:36:00.999Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000700,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "add users with valid info",
+        "description": "",
+        "id": "creating-user-on--users-page;add-users-with-valid-info",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "user login as \"usertype\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "navigate to \"users module\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "click \"Add User\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "creates new user using following information",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "Full Name",
+                  "Mike Smith"
+                ]
+              },
+              {
+                "cells": [
+                  "Email",
+                  "mikesmith@email.com"
+                ]
+              },
+              {
+                "cells": [
+                  "Password",
+                  "12345"
+                ]
+              },
+              {
+                "cells": [
+                  "User Group",
+                  "Students"
+                ]
+              },
+              {
+                "cells": [
+                  "Status",
+                  "Active"
+                ]
+              },
+              {
+                "cells": [
+                  "Start Date",
+                  "11-04-2020"
+                ]
+              },
+              {
+                "cells": [
+                  "End Date",
+                  "11-04-2030"
+                ]
+              },
+              {
+                "cells": [
+                  "Address",
+                  "100 Same st, Anytown, USA, 10001"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 19,
+            "name": "the message  \"the user has been created\" should be displayed",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@c"
+          },
+          {
+            "name": "@EUG16-253"
+          },
+          {
+            "name": "@EUG16-224"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-08T16:36:01.151Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Closing the adding user",
+        "description": "",
+        "id": "creating-user-on--users-page;closing-the-adding-user",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23,
+            "name": "the user is on the login page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "user login as \"usertype\".",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 25,
+            "name": "navigate to \"users module\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 26,
+            "name": "click \"Add User\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 27,
+            "name": "click close button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 28,
+            "name": "verify closing the “adding”",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@c"
+          },
+          {
+            "name": "@EUG16-254"
+          },
+          {
+            "name": "@EUG16-224"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-08T16:36:01.170Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "edit user info",
+        "description": "",
+        "id": "creating-user-on--users-page;edit-user-info",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 32,
+            "name": "the user is on the login page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 33,
+            "name": "user login as \"usertype\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 34,
+            "name": "click \"Edit User\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 35,
+            "name": "do some valid changes",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "Full Name",
+                  "Smith Mike"
+                ]
+              },
+              {
+                "cells": [
+                  "Email",
+                  "smithmike@email.com"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 40,
+            "name": "verify editing",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@c"
+          },
+          {
+            "name": "@EUG16-255"
+          },
+          {
+            "name": "@EUG16-224"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-08T16:36:01.187Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 43,
+        "name": "Closing the editing user",
+        "description": "",
+        "id": "creating-user-on--users-page;closing-the-editing-user",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 44,
+            "name": "the user is on the login page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 45,
+            "name": "user login as \"usertype\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 46,
+            "name": "click \"Edit User\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 47,
+            "name": "click close button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 48,
+            "name": "verify closing the “editing",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@c"
+          },
+          {
+            "name": "@EUG16-256"
+          },
+          {
+            "name": "@EUG16-224"
+          }
+        ]
+      }
+    ],
+    "name": "Creating user on  users page",
+    "description": "",
+    "id": "creating-user-on--users-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/CreateUser.feature",
+    "tags": [
+      {
+        "name": "@c",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
