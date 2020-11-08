@@ -1,4 +1,4 @@
-Feature:Creating user on  users page
+Feature: Creating user on  users page
 
   @EUG16-253 @EUG16-224
   Scenario: add users with valid info

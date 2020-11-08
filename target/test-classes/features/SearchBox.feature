@@ -1,6 +1,6 @@
 Feature: As a user ,I should able to search book
 
-  Background:
+  @Background
     Given the user is on the login page
     When user login as "usertype"
 
@@ -29,8 +29,9 @@ Feature: As a user ,I should able to search book
       | Essay                   |
       | Memoir                  |
 
-  Scenario Outline : searching a specific book by column names
-    @EUG16-260
+  @EUG16-260
+  Scenario Outline: searching a specific book by column names
+
 
     And navigate to "books module"
     And search by <columnInfo>
