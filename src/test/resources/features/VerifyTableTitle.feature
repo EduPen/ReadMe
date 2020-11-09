@@ -1,7 +1,10 @@
 Feature: User should be able to see table with default titles
 
+  Background:
+    Given the user is on the login page
+
   @EUG16-252 @EUG16-224
-  Given the user is on the login page
+  Scenario:Table columns names on books page
     When user login as "usertype"
     And navigate to "books module"
     Then verifies books table titles as
@@ -13,6 +16,8 @@ Feature: User should be able to see table with default titles
       | Year        |
       | Borrowed By |
 
+
+  Scenario:Scenario: borrowing book tables name verification
     Given the user is on the login page
     When user login as "students"
     And navigate to "borrowing  book" page
