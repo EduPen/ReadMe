@@ -24,8 +24,8 @@ public class BorrowingStepDef {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
-    @Then("verify that barrowed book returned")
-    public void verify_that_barrowed_book_returned() {
+    @Then("verify that borrowed book returned")
+    public void verify_that_borrowed_book_returned() {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
