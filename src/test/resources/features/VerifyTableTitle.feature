@@ -1,14 +1,10 @@
 Feature: User should be able to see table with default titles
 
   @EUG16-252 @EUG16-224
-  Scenario Outline: Verify the table title
-    Given the user is on the login page
-    When the user logs in as <usertype>
-    And goes to Books tab
+  Given the user is on the login page
+    When user login as "usertype"
+    And go to the books page
     Then verifies table titles as
-
-    Examples:
-      | usertype    |
       | Actions     |
       | ISBN        |
       | Name        |
@@ -16,3 +12,14 @@ Feature: User should be able to see table with default titles
       | Category    |
       | Year        |
       | Borrowed By |
+
+    Given the user is on the login page
+    When user login as "students"
+    And navigate to "borrowing  book" page
+    Then verifies table titles as
+      | Actions             |
+      | Book Name           |
+      | Barrowed Date       |
+      | Planned Return Date |
+      | Return Date         |
+      | Is Returned?        |
