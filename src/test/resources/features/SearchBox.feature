@@ -1,13 +1,13 @@
 Feature: As a user ,I should able to search book
 
-  @Background
+  Background
     Given the user is on the login page
     When user login as "usertype"
 
   @EUG16-258
 
   Scenario: searching book with different categories
-    And navigate to "books module" and click book categories
+    And navigate to "books module"
     Then categories list should have following names:
       | Action and   Adventure  |
       | Anthology               |
@@ -31,8 +31,6 @@ Feature: As a user ,I should able to search book
 
   @EUG16-260
   Scenario Outline: searching a specific book by column names
-
-
     And navigate to "books module"
     And search by <columnInfo>
     Then verify the search with following column information

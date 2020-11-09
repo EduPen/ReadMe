@@ -1,6 +1,6 @@
 Feature: As a user ,I should able to search book
 
-  @Background
+  Background
     Given the user is on the login page
     When user login as "usertype"
 
