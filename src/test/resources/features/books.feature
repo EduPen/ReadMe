@@ -12,10 +12,6 @@ Feature: As a user, I should be able to see book records on user page
     Then the default record shows 10
 
 
-
-Feature:As a user, I should be able to see book records on user page
-
-
   @EUG16-267
   Scenario Outline:Show records for <count> options
 
