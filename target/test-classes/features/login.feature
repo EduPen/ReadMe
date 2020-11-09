@@ -27,7 +27,7 @@ Feature:As a user, I should be able to login to the library app
   @EUG16-264  @EUG16-224
   Scenario Outline: Enter with invalid credentials
 
-    When Users login with invalid "<email>" and "<password>"
+    When Users login with invalid <email> and <password>
     Then Error message "Sorry, Wrong Email or Password" display
     Examples:
       | email             | password |

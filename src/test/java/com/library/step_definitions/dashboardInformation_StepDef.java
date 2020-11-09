@@ -5,15 +5,20 @@ import io.cucumber.java.en.When;
 
 public class dashboardInformation_StepDef {
 
-
-    @When("navigate to {string}")
-    public void navigate_to(String string) {
+    @When("navigate to books module")
+    public void navigate_to_books_module() {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
 
     @When("calculate total borrowed books number")
     public void calculate_total_borrowed_books_number() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
+
+    @When("navigate to dashboard module")
+    public void navigate_to_dashboard_module() {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
@@ -47,4 +52,5 @@ public class dashboardInformation_StepDef {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
+
 }

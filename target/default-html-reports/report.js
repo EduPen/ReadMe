@@ -51,7 +51,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "Click “borrow book button\"",
+  "name": "Click borrow book button",
   "keyword": "And "
 });
 formatter.match({});
@@ -114,7 +114,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "navigate to \"borrowing book\" page",
+  "name": "navigate to borrowing book page",
   "keyword": "And "
 });
 formatter.match({});
@@ -122,7 +122,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "click \"return button\"",
+  "name": "click return button",
   "keyword": "And "
 });
 formatter.match({});
@@ -130,7 +130,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "verify that barrowed book returned",
+  "name": "verify that borrowed book returned",
   "keyword": "Then "
 });
 formatter.match({});

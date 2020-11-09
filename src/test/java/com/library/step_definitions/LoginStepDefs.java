@@ -53,8 +53,8 @@ public class LoginStepDefs {
         throw new io.cucumber.java.PendingException();
     }
 
-    @When("Users login with invalid {string} and {string}")
-    public void users_login_with_invalid_and(String string, String string2) {
+    @When("Users login with invalid invalid and FPEDLRY3")
+    public void users_login_with_invalid_invalid_and_FPEDLRY3() {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
@@ -64,4 +64,29 @@ public class LoginStepDefs {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
+
+    @When("Users login with invalid student91@library and invalid")
+    public void users_login_with_invalid_student91_library_and_invalid() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
+
+    @When("Users login with invalid  and FPEDLRY3")
+    public void users_login_with_invalid_and_FPEDLRY3() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
+
+    @When("Users login with invalid student91@library and ")
+    public void users_login_with_invalid_student91_library_and() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
+
+    @When("Users login with invalid  and ")
+    public void users_login_with_invalid_and() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
+
 }
