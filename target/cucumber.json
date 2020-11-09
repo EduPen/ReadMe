@@ -3,11 +3,59 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-11-09T18:03:22.572Z",
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4998500,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2998100,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user login as \"usertype\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"usertype\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.logout_StepDef.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "navigate to \"books module\"",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-09T18:07:22.246Z",
         "before": [
           {
             "result": {
-              "duration": 1999600,
+              "duration": 3997200,
               "status": "skipped"
             },
             "match": {
@@ -15,10 +63,10 @@
             }
           }
         ],
-        "line": 6,
-        "name": "Verify logout",
+        "line": 11,
+        "name": "Total borrowed books number on Dashboard",
         "description": "",
-        "id": ";verify-logout",
+        "id": "as-a-librarian--i-should-able-to-see-total-books--users-and-borrowed-books-information-on-the-dashboard-page;total-borrowed-books-number-on-dashboard",
         "after": [
           {
             "result": {
@@ -34,10 +82,57 @@
         "steps": [
           {
             "result": {
-              "duration": 1998700,
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "calculate total borrowed books number",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "navigate to \"dashboard module\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "verify the barrowed books number are equal",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Dash"
+          },
+          {
+            "name": "@EUG16-224"
+          },
+          {
+            "name": "@EUG16-262"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 999200,
               "status": "skipped"
             },
-            "line": 8,
+            "line": 6,
             "name": "the user is on the login page",
             "match": {
               "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
@@ -46,19 +141,68 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 13990700,
+              "status": "skipped"
             },
-            "line": 9,
+            "line": 7,
             "name": "user login as \"usertype\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"usertype\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.logout_StepDef.user_login_as(java.lang.String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
               "status": "undefined"
             },
-            "line": 10,
-            "name": "titles contains \"page\"",
+            "line": 8,
+            "name": "navigate to \"books module\"",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-09T18:07:22.744Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Total users number on Dashboard",
+        "description": "",
+        "id": "as-a-librarian--i-should-able-to-see-total-books--users-and-borrowed-books-information-on-the-dashboard-page;total-users-number-on-dashboard",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 18,
+            "name": "calculate total books number",
             "match": {},
             "keyword": "And "
           },
@@ -66,8 +210,8 @@
             "result": {
               "status": "undefined"
             },
-            "line": 11,
-            "name": "user click log out",
+            "line": 19,
+            "name": "navigate to \"dashboard module\"",
             "match": {},
             "keyword": "And "
           },
@@ -75,27 +219,164 @@
             "result": {
               "status": "undefined"
             },
-            "line": 12,
-            "name": "user is on the login page",
+            "line": 20,
+            "name": "verify the users  number are equal",
             "match": {},
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@EUG16-261"
+            "name": "@Dash"
           },
           {
             "name": "@EUG16-224"
+          },
+          {
+            "name": "@EUG16-222"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1998700,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 998900,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user login as \"usertype\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"usertype\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.logout_StepDef.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "navigate to \"books module\"",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-09T18:07:22.831Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Total books number on Dashboard",
+        "description": "",
+        "id": "as-a-librarian--i-should-able-to-see-total-books--users-and-borrowed-books-information-on-the-dashboard-page;total-books-number-on-dashboard",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "calculate total (active and inactive ) users",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 25,
+            "name": "navigate to \"dashboard module\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 26,
+            "name": "verify the books numbers are equal",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Dash"
+          },
+          {
+            "name": "@EUG16-224"
+          },
+          {
+            "name": "@EUG16-223"
           }
         ]
       }
     ],
-    "name": "",
+    "name": "As a librarian, I should able to see total books, users and borrowed books information on the Dashboard page",
     "description": "",
-    "id": "",
+    "id": "as-a-librarian--i-should-able-to-see-total-books--users-and-borrowed-books-information-on-the-dashboard-page",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/logout.feature",
-    "tags": []
+    "uri": "file:src/test/resources/features/dashboardInformation.feature",
+    "tags": [
+      {
+        "name": "@Dash",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@EUG16-224",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 7
+        }
+      }
+    ]
   }
 ]
