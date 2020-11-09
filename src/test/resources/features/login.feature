@@ -1,7 +1,5 @@
 @login
-Feature:hello
-
-#User Story:
+Feature:As a user, I should be able to login to the library app
 
   Background:
   Given the user is on the login page
