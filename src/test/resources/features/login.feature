@@ -1,13 +1,11 @@
 Feature:
 
-#User Story:
-
   @Background:
   Given the user is on the login page
 
 
   @EUG16-259  @EUG16-224
-  Scenario Outline: verify login
+  Scenario Outline:verify login
     When user enter <email> and enter <password>
     Then user logged in page
 
@@ -20,13 +18,13 @@ Feature:
 
 
   @EUG16-257  @EUG16-224
-  Scenario: verify role login
+  Scenario:verify role login
     When user login as “usertype”
     Then title contains “page”
 
 
   @EUG16-264  @EUG16-224
-  Scenario Outline: Enter with invalid credentials
+  Scenario Outline:Enter with invalid credentials
 
     When Users login with invalid "<email>" and "<password>"
     Then Error message "Sorry, Wrong Email or Password" display
