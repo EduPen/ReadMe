@@ -1,9 +1,9 @@
-
+@login
 Feature:hello
 
 #User Story:
 
-  @Background:
+  Background:
   Given the user is on the login page
 
 
