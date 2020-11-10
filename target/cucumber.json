@@ -3,11 +3,48 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-11-08T16:36:00.999Z",
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15623200,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user login as \"usertype\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"usertype\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.logout_StepDef.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-09T22:02:29.803Z",
         "before": [
           {
             "result": {
-              "duration": 1000700,
               "status": "skipped"
             },
             "match": {
@@ -15,10 +52,10 @@
             }
           }
         ],
-        "line": 5,
-        "name": "add users with valid info",
+        "line": 11,
+        "name": "Borrowing the book",
         "description": "",
-        "id": "creating-user-on--users-page;add-users-with-valid-info",
+        "id": "borrowing-books;borrowing-the-book",
         "after": [
           {
             "result": {
@@ -36,397 +73,130 @@
             "result": {
               "status": "undefined"
             },
-            "line": 6,
-            "name": "the user is on the login page",
+            "line": 12,
+            "name": "Click borrow book button",
             "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "the message “The book has been borrowed” is displayed",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@D"
+          },
+          {
+            "name": "@EUG16-247"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
-            "line": 7,
+            "line": 6,
             "name": "user login as \"usertype\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"usertype\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.logout_StepDef.user_login_as(java.lang.String)"
+            },
             "keyword": "When "
-          },
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-09T22:02:30.145Z",
+        "before": [
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
-            "line": 8,
-            "name": "navigate to \"users module\"",
-            "match": {},
-            "keyword": "And "
-          },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Returning the book",
+        "description": "",
+        "id": "borrowing-books;returning-the-book",
+        "after": [
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
-            "line": 9,
-            "name": "click \"Add User\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 10,
-            "name": "creates new user using following information",
-            "match": {},
-            "rows": [
-              {
-                "cells": [
-                  "Full Name",
-                  "Mike Smith"
-                ]
-              },
-              {
-                "cells": [
-                  "Email",
-                  "mikesmith@email.com"
-                ]
-              },
-              {
-                "cells": [
-                  "Password",
-                  "12345"
-                ]
-              },
-              {
-                "cells": [
-                  "User Group",
-                  "Students"
-                ]
-              },
-              {
-                "cells": [
-                  "Status",
-                  "Active"
-                ]
-              },
-              {
-                "cells": [
-                  "Start Date",
-                  "11-04-2020"
-                ]
-              },
-              {
-                "cells": [
-                  "End Date",
-                  "11-04-2030"
-                ]
-              },
-              {
-                "cells": [
-                  "Address",
-                  "100 Same st, Anytown, USA, 10001"
-                ]
-              }
-            ],
-            "keyword": "And "
-          },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
           {
             "result": {
               "status": "undefined"
             },
             "line": 19,
-            "name": "the message  \"the user has been created\" should be displayed",
+            "name": "navigate to borrowing book page",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 20,
+            "name": "click return button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "verify that borrowed book returned",
             "match": {},
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@c"
+            "name": "@D"
           },
           {
-            "name": "@EUG16-253"
-          },
-          {
-            "name": "@EUG16-224"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-08T16:36:01.151Z",
-        "before": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "match": {
-              "location": "com.library.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 22,
-        "name": "Closing the adding user",
-        "description": "",
-        "id": "creating-user-on--users-page;closing-the-adding-user",
-        "after": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "match": {
-              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 23,
-            "name": "the user is on the login page",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 24,
-            "name": "user login as \"usertype\".",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 25,
-            "name": "navigate to \"users module\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 26,
-            "name": "click \"Add User\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 27,
-            "name": "click close button",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 28,
-            "name": "verify closing the “adding”",
-            "match": {},
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@c"
-          },
-          {
-            "name": "@EUG16-254"
-          },
-          {
-            "name": "@EUG16-224"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-08T16:36:01.170Z",
-        "before": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "match": {
-              "location": "com.library.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 31,
-        "name": "edit user info",
-        "description": "",
-        "id": "creating-user-on--users-page;edit-user-info",
-        "after": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "match": {
-              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 32,
-            "name": "the user is on the login page",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 33,
-            "name": "user login as \"usertype\"",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 34,
-            "name": "click \"Edit User\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 35,
-            "name": "do some valid changes",
-            "match": {},
-            "rows": [
-              {
-                "cells": [
-                  "Full Name",
-                  "Smith Mike"
-                ]
-              },
-              {
-                "cells": [
-                  "Email",
-                  "smithmike@email.com"
-                ]
-              }
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 40,
-            "name": "verify editing",
-            "match": {},
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@c"
-          },
-          {
-            "name": "@EUG16-255"
-          },
-          {
-            "name": "@EUG16-224"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-08T16:36:01.187Z",
-        "before": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "match": {
-              "location": "com.library.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 43,
-        "name": "Closing the editing user",
-        "description": "",
-        "id": "creating-user-on--users-page;closing-the-editing-user",
-        "after": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "match": {
-              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 44,
-            "name": "the user is on the login page",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 45,
-            "name": "user login as \"usertype\"",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 46,
-            "name": "click \"Edit User\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 47,
-            "name": "click close button",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 48,
-            "name": "verify closing the “editing",
-            "match": {},
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@c"
-          },
-          {
-            "name": "@EUG16-256"
+            "name": "@EUG16-246"
           },
           {
             "name": "@EUG16-224"
@@ -434,14 +204,14 @@
         ]
       }
     ],
-    "name": "Creating user on  users page",
+    "name": "Borrowing books",
     "description": "",
-    "id": "creating-user-on--users-page",
+    "id": "borrowing-books",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/CreateUser.feature",
+    "uri": "file:src/test/resources/features/Borrowing.feature",
     "tags": [
       {
-        "name": "@c",
+        "name": "@D",
         "type": "Tag",
         "location": {
           "line": 1,

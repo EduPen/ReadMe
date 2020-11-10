@@ -1,10 +1,12 @@
 Feature: Creating user on  users page
 
-  @EUG16-253 @EUG16-224
-  Scenario: add users with valid info
+  Background:
     Given the user is on the login page
     When user login as "usertype"
-    And navigate to users module
+    And navigate to "users" module
+
+  @EUG16-253 @EUG16-224
+  Scenario: add users with valid info
     And click Add User
     And creates new user using following information
       | Full Name  | Mike Smith                       |
@@ -19,29 +21,20 @@ Feature: Creating user on  users page
 
   @EUG16-254 @EUG16-224
   Scenario: Closing the adding user
-    Given the user is on the login page
-    When user login as "usertype"
-    And navigate to users module
     And click Add User
     And click close button
     Then verify closing the “adding”
 
   @EUG16-255 @EUG16-224
   Scenario: edit user info
-    Given the user is on the login page
-    When user login as "usertype"
     And click Edit User
     And do some valid changes
-
       | Full Name | Smith Mike          |
       | Email     | smithmike@email.com |
-
     Then verify editing
 
   @EUG16-256 @EUG16-224
   Scenario: Closing the editing user
-    Given the user is on the login page
-    When user login as "usertype"
     And click Edit User
     And click close button
     Then verify closing the editing

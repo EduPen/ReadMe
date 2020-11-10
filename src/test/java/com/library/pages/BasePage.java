@@ -22,13 +22,13 @@ public abstract class  BasePage {
     @CacheLookup
     protected WebElement loaderMask;
 
-    @FindBy(css = "h1[class='oro-subtitle']")
+    @FindBy(xpath= "//h3")
     public WebElement pageSubTitle;
 
-    @FindBy(css = "#user-menu > a")
+    @FindBy(xpath = "//a[@id='navbarDropdown']/span")
     public WebElement userName;
 
-    @FindBy(linkText = "Logout")
+    @FindBy(xpath = "//a[.='Log Out']")
     public WebElement logOutLink;
 
     @FindBy(linkText = "My User")
