@@ -15,10 +15,16 @@ public class LoginPage extends BasePage{
     @FindBy(tagName = "button")
     public WebElement loginBtn;
 
+
+    @FindBy(id="inputEmail-error")
+    public WebElement invalidemailaddress;
+
+
     public void login(String username, String password) {
         usernameInput.sendKeys(username);
         passwordInput.sendKeys(password);
         loginBtn.click();
     }
+
 
 }
