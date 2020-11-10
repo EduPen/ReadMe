@@ -11,6 +11,7 @@
         "steps": [
           {
             "result": {
+              "duration": 1997800,
               "status": "skipped"
             },
             "line": 5,
@@ -19,32 +20,15 @@
               "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
             },
             "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 15623200,
-              "status": "skipped"
-            },
-            "line": 6,
-            "name": "user login as \"usertype\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"usertype\"",
-                  "offset": 14
-                }
-              ],
-              "location": "com.library.step_definitions.logout_StepDef.user_login_as(java.lang.String)"
-            },
-            "keyword": "When "
           }
         ]
       },
       {
-        "start_timestamp": "2020-11-09T22:02:29.803Z",
+        "start_timestamp": "2020-11-10T17:39:25.572Z",
         "before": [
           {
             "result": {
+              "duration": 5995000,
               "status": "skipped"
             },
             "match": {
@@ -52,10 +36,10 @@
             }
           }
         ],
-        "line": 11,
-        "name": "Borrowing the book",
+        "line": 15,
+        "name": "verify login",
         "description": "",
-        "id": "borrowing-books;borrowing-the-book",
+        "id": "as-a-user--i-should-be-able-to-login-to-the-library-app;verify-login;;2",
         "after": [
           {
             "result": {
@@ -67,33 +51,39 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
               "status": "undefined"
             },
-            "line": 12,
-            "name": "Click borrow book button",
+            "line": 10,
+            "name": "user enter \"student70@library\" and enter \"FPEDLRY3\"",
             "match": {},
-            "keyword": "And "
+            "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 998700,
+              "status": "skipped"
             },
-            "line": 13,
-            "name": "the message “The book has been borrowed” is displayed",
-            "match": {},
+            "line": 11,
+            "name": "user logged in page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.user_logged_in_page()"
+            },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@D"
+            "name": "@login"
           },
           {
-            "name": "@EUG16-247"
+            "name": "@EUG16-259"
+          },
+          {
+            "name": "@EUG16-224"
           }
         ]
       },
@@ -106,6 +96,7 @@
         "steps": [
           {
             "result": {
+              "duration": 997200,
               "status": "skipped"
             },
             "line": 5,
@@ -114,28 +105,180 @@
               "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
             },
             "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 6,
-            "name": "user login as \"usertype\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"usertype\"",
-                  "offset": 14
-                }
-              ],
-              "location": "com.library.step_definitions.logout_StepDef.user_login_as(java.lang.String)"
-            },
-            "keyword": "When "
           }
         ]
       },
       {
-        "start_timestamp": "2020-11-09T22:02:30.145Z",
+        "start_timestamp": "2020-11-10T17:39:25.920Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "verify login",
+        "description": "",
+        "id": "as-a-user--i-should-be-able-to-login-to-the-library-app;verify-login;;3",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "user enter \"student91@library\" and enter \"c4vlSAqZ\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1999400,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user logged in page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.user_logged_in_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@EUG16-259"
+          },
+          {
+            "name": "@EUG16-224"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 999000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-10T17:39:25.959Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1999100,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "verify login",
+        "description": "",
+        "id": "as-a-user--i-should-be-able-to-login-to-the-library-app;verify-login;;4",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "user enter \"student92@library\" and enter \"7kPVRH29\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1521100,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user logged in page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.user_logged_in_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@EUG16-259"
+          },
+          {
+            "name": "@EUG16-224"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 999600,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-10T17:39:26.008Z",
         "before": [
           {
             "result": {
@@ -147,9 +290,93 @@
           }
         ],
         "line": 18,
-        "name": "Returning the book",
+        "name": "verify login",
         "description": "",
-        "id": "borrowing-books;returning-the-book",
+        "id": "as-a-user--i-should-be-able-to-login-to-the-library-app;verify-login;;5",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "user enter \"librarian18@library\" and enter \"rKG2sP88\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 999800,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user logged in page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.user_logged_in_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@EUG16-259"
+          },
+          {
+            "name": "@EUG16-224"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2001900,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-10T17:39:26.030Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "verify role login",
+        "description": "",
+        "id": "as-a-user--i-should-be-able-to-login-to-the-library-app;verify-role-login",
         "after": [
           {
             "result": {
@@ -165,38 +392,485 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 9043500,
+              "status": "skipped"
             },
-            "line": 19,
-            "name": "navigate to borrowing book page",
-            "match": {},
-            "keyword": "And "
+            "line": 23,
+            "name": "user login as “usertype”",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.user_login_as_usertype()"
+            },
+            "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 1000300,
+              "status": "skipped"
             },
-            "line": 20,
-            "name": "click return button",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
+            "line": 24,
+            "name": "title contains “page”",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.title_contains_page()"
             },
-            "line": 21,
-            "name": "verify that borrowed book returned",
-            "match": {},
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@D"
+            "name": "@login"
           },
           {
-            "name": "@EUG16-246"
+            "name": "@EUG16-257"
+          },
+          {
+            "name": "@EUG16-224"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 999700,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-10T17:39:26.129Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 34,
+        "name": "Enter with invalid credentials",
+        "description": "",
+        "id": "as-a-user--i-should-be-able-to-login-to-the-library-app;enter-with-invalid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 30,
+            "name": "Users login with invalid \"invalid\" and \"FPEDLRY3\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000400,
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "Error message \"Sorry, Wrong Email or Password\" display",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sorry, Wrong Email or Password\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.error_message_display(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@EUG16-264"
+          },
+          {
+            "name": "@EUG16-224"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3001800,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-10T17:39:26.167Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 35,
+        "name": "Enter with invalid credentials",
+        "description": "",
+        "id": "as-a-user--i-should-be-able-to-login-to-the-library-app;enter-with-invalid-credentials;;3",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 30,
+            "name": "Users login with invalid \"student91@library\" and \"invalid\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 998700,
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "Error message \"Sorry, Wrong Email or Password\" display",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sorry, Wrong Email or Password\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.error_message_display(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@EUG16-264"
+          },
+          {
+            "name": "@EUG16-224"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1999300,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-10T17:39:26.274Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 36,
+        "name": "Enter with invalid credentials",
+        "description": "",
+        "id": "as-a-user--i-should-be-able-to-login-to-the-library-app;enter-with-invalid-credentials;;4",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 30,
+            "name": "Users login with invalid \"\" and \"FPEDLRY3\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 998900,
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "Error message \"Sorry, Wrong Email or Password\" display",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sorry, Wrong Email or Password\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.error_message_display(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@EUG16-264"
+          },
+          {
+            "name": "@EUG16-224"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000300,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-10T17:39:26.293Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 37,
+        "name": "Enter with invalid credentials",
+        "description": "",
+        "id": "as-a-user--i-should-be-able-to-login-to-the-library-app;enter-with-invalid-credentials;;5",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 30,
+            "name": "Users login with invalid \"student91@library\" and \"\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1998500,
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "Error message \"Sorry, Wrong Email or Password\" display",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sorry, Wrong Email or Password\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.error_message_display(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@EUG16-264"
+          },
+          {
+            "name": "@EUG16-224"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1998400,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-10T17:39:26.335Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 38,
+        "name": "Enter with invalid credentials",
+        "description": "",
+        "id": "as-a-user--i-should-be-able-to-login-to-the-library-app;enter-with-invalid-credentials;;6",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 30,
+            "name": "Users login with invalid \"\" and \"\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 998900,
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "Error message \"Sorry, Wrong Email or Password\" display",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sorry, Wrong Email or Password\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.error_message_display(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@EUG16-264"
           },
           {
             "name": "@EUG16-224"
@@ -204,14 +878,14 @@
         ]
       }
     ],
-    "name": "Borrowing books",
+    "name": "As a user, I should be able to login to the library app",
     "description": "",
-    "id": "borrowing-books",
+    "id": "as-a-user--i-should-be-able-to-login-to-the-library-app",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Borrowing.feature",
+    "uri": "file:src/test/resources/features/login.feature",
     "tags": [
       {
-        "name": "@D",
+        "name": "@login",
         "type": "Tag",
         "location": {
           "line": 1,
