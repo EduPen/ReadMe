@@ -1,136 +1,55 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/Borrowing.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/SearchBox.feature");
 formatter.feature({
-  "name": "Borrowing books",
+  "name": "As a user ,I should able to search book",
+  "description": "  Background\n    Given the user is on the login page\n    When user login as \"usertype\"",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "name": "searching book with different categories",
   "description": "",
-  "keyword": "Feature",
+  "keyword": "Scenario",
   "tags": [
     {
-      "name": "@D"
+      "name": "@EUG16-258"
     }
   ]
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
 });
 formatter.before({
   "status": "skipped"
 });
 formatter.step({
-  "name": "the user is on the login page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user login as \"usertype\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.library.step_definitions.logout_StepDef.user_login_as(java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "name": "Borrowing the book",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@D"
-    },
-    {
-      "name": "@EUG16-247"
-    }
-  ]
-});
-formatter.step({
-  "name": "Click borrow book button",
+  "name": "navigate to books module",
   "keyword": "And "
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "the message “The book has been borrowed” is displayed",
-  "keyword": "Then "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.after({
-  "status": "skipped"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "the user is on the login page",
-  "keyword": "Given "
-});
 formatter.match({
-  "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+  "location": "com.library.step_definitions.dashboardInformation_StepDef.navigate_to_books_module()"
 });
 formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "user login as \"usertype\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.library.step_definitions.logout_StepDef.user_login_as(java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "name": "Returning the book",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@D"
-    },
-    {
-      "name": "@EUG16-246"
-    },
-    {
-      "name": "@EUG16-224"
-    }
-  ]
-});
-formatter.step({
-  "name": "navigate to borrowing book page",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "click return button",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "verify that borrowed book returned",
+  "name": "categories list should have following names:",
+  "rows": [
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
+  ],
   "keyword": "Then "
 });
 formatter.match({});

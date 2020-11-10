@@ -17,7 +17,7 @@ Feature: User should be able to see table with default titles
       | Borrowed By |
 
 
-  Scenario:Scenario: borrowing book tables name verification
+  Scenario: borrowing book tables name verification
     Given the user is on the login page
     When user login as "students"
     And navigate to borrowing  book page
