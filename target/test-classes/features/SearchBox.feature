@@ -1,3 +1,4 @@
+@Sear
 Feature: As a user ,I should able to search book
 
   Background
@@ -8,7 +9,7 @@ Feature: As a user ,I should able to search book
 
   Scenario: searching book with different categories
     And navigate to books module
-    Then categories list should have following names:
+    Then categories list should have following names
       | Action and   Adventure  |
       | Anthology               |
       | Classic                 |

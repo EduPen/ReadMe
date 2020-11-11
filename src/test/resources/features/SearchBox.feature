@@ -1,3 +1,4 @@
+@Sear
 Feature: As a user ,I should able to search book
 
   Background
@@ -8,7 +9,7 @@ Feature: As a user ,I should able to search book
 
   Scenario: searching book with different categories
     And navigate to books module
-    Then categories list should have following names:
+    Then categories list should have following names
       | Action and   Adventure  |
       | Anthology               |
       | Classic                 |
@@ -32,7 +33,7 @@ Feature: As a user ,I should able to search book
   @EUG16-260
   Scenario Outline: searching a specific book by column names
     And navigate to books module
-    And search by <columnInfo>
+    And search by "<columnInfo>"
     Then verify the search with following column information
     Examples:
       | columnInfo    |
