@@ -1,5 +1,4 @@
-
-Feature:2-	As a user, I should be able to logout from the library app
+Feature: logout
 
   @EUG16-261  @EUG16-224
   Scenario: Verify logout

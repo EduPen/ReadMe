@@ -1,13 +1,14 @@
 Feature: User should be able to see table with default titles
 
-  Background:
-    Given the user is on the login page
-
   @EUG16-252 @EUG16-224
-  Scenario:Table columns names on books page
-    When user login as "usertype"
-    And navigate to books module
-    Then verifies books table titles as
+  Scenario Outline: Verify the table title
+    Given the user is on the login page
+    When the user logs in as "<usertype>"
+    And goes to Books tab
+    Then verifies table titles as
+
+    Examples:
+      | usertype    |
       | Actions     |
       | ISBN        |
       | Name        |
@@ -15,16 +16,3 @@ Feature: User should be able to see table with default titles
       | Category    |
       | Year        |
       | Borrowed By |
-
-
-  Scenario: borrowing book tables name verification
-    Given the user is on the login page
-    When user login as "students"
-    And navigate to borrowing  book page
-    Then verifies borrowed books table titles as
-      | Actions             |
-      | Book Name           |
-      | Borrowed Date       |
-      | Planned Return Date |
-      | Return Date         |
-      | Is Returned?        |
