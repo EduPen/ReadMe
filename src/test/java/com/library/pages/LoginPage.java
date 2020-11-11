@@ -19,12 +19,6 @@ public class LoginPage extends BasePage{
     public WebElement errorMessage;
 
 
-    @FindBy(id="inputEmail-error")
-    public WebElement invalidemailaddress;
-    @FindBy(xpath = "//*[@id=\"login-form\"]/div[2]/div")
-    public WebElement invalidpassword;
-
-
     public void login(String username, String password) {
         usernameInput.sendKeys(username);
         passwordInput.sendKeys(password);
