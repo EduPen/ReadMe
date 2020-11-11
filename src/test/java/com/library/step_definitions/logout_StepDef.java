@@ -1,31 +1,45 @@
 package com.library.step_definitions;
 
+import com.library.pages.Logout;
+import com.library.utilities.Driver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class logout_StepDef {
 
-    @When("user login as {string}")
-    public void user_login_as(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+
+    @Then("titles contains {string}")
+    public void titles_contains(String string) {
+        String actualTitle = Driver.get().getTitle();
+
+       Assert.assertTrue(actualTitle.contains("Library"));
+        System.out.println(actualTitle);
     }
 
-    @When("titles contains {string}")
-    public void titles_contains(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    @Then("user click {string}")
+    public void user_click(String string) {
+        Logout logout =new Logout ();
+        logout.userTypeClick();
+
     }
+
+
 
     @When("user click log out")
     public void user_click_log_out() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        Logout logout = new Logout();
+        logout.clickLogout();
+
+
+
     }
 
     @Then("user is on the login page")
     public void user_is_on_the_login_page() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        String actualTitle = Driver.get().getTitle();
+
+        Assert.assertTrue(actualTitle.contains("Login"));
+
     }
 }
