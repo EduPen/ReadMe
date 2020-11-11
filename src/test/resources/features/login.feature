@@ -20,8 +20,8 @@ Feature:As a user, I should be able to login to the library app
 
   @EUG16-257  @EUG16-224
   Scenario: verify role login
-    When user login as "usertype"
-    Then title contains "Library"
+    When user login as "librarian"
+    Then title verify login page
 
 
   @EUG16-224 @log
