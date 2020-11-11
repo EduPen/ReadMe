@@ -15,6 +15,9 @@ public class LoginPage extends BasePage{
     @FindBy(tagName = "button")
     public WebElement loginBtn;
 
+    @FindBy(id = "inputEmail-error")
+    public WebElement errorMessage;
+
 
     @FindBy(id="inputEmail-error")
     public WebElement invalidemailaddress;

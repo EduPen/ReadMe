@@ -24,7 +24,7 @@ Feature:As a user, I should be able to login to the library app
     Then title contains "Library"
 
 
-  @EUG16-224 @son
+  @EUG16-224 @log
   Scenario Outline: Enter with invalid credentials
     Given the user is on the login page
     When Users login with invalid "<email>" and "<password>"

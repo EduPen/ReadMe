@@ -65,4 +65,12 @@ public class LoginStepDefs {
         }
     }
 
+    @Then("Error {string} display")
+    public void error_display(String message) {
+         BrowserUtils.waitFor(2);
+        String actualMessage=loginPage.errorMessage.getText();
+         Assert.assertTrue(actualMessage.equals(message));
+
+    }
+
 }
