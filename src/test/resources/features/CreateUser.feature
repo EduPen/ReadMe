@@ -1,4 +1,4 @@
-@c
+
 Feature:Creating user on  users page
 
   @EUG16-253 @EUG16-224
@@ -21,7 +21,7 @@ Feature:Creating user on  users page
   @EUG16-254 @EUG16-224
   Scenario: Closing the adding user
     Given the user is on the login page
-    When user login as "usertype".
+    When user login as "usertype"
     And navigate to "users module"
     And click "Add User"
     And click close button
