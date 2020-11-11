@@ -2,13 +2,13 @@
 Feature:As a user, I should be able to login to the library app
 
   Background:
-  Given the user is on the login page
+    Given the user is on the login page
 
 
   @EUG16-259  @EUG16-224
   Scenario Outline: verify login
     When user enter "<email>" and enter "<password>"
-    Then user logged in page
+    Then title verify login page
 
     Examples:
       | email               | password |
@@ -20,19 +20,24 @@ Feature:As a user, I should be able to login to the library app
 
   @EUG16-257  @EUG16-224
   Scenario: verify role login
-    When user login as “usertype”
-    Then title contains “page”
+    When user login as "librarian"
+    Then title verify login page
 
 
-  @EUG16-264  @EUG16-224
+  @EUG16-224 @log
   Scenario Outline: Enter with invalid credentials
-
+    Given the user is on the login page
     When Users login with invalid "<email>" and "<password>"
-    Then Error message "Sorry, Wrong Email or Password" display
+    Then Error "<message>" display
     Examples:
-      | email             | password |
-      | invalid           | FPEDLRY3 |
-      | student91@library | invalid  |
-      |                   | FPEDLRY3 |
-      | student91@library |          |
-      |                   |          |
+      | email             | password | message                             |
+      | student91@library | ABC123   | Sorry, Wrong Email or Password      |
+      | email @emal       | c4vlSAqZ | Please enter a valid email address. |
+      | ABC               |          | Please enter a valid email address. |
+      |                   | c4vlSAqZ | This field is required.             |
+      | student91@library |          | Sorry, Wrong Email or Password      |
+      |                   |          | This field is required.             |
+
+
+
+

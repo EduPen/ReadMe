@@ -15,10 +15,15 @@ public class LoginPage extends BasePage{
     @FindBy(tagName = "button")
     public WebElement loginBtn;
 
+    @FindBy(xpath = "//div[@class='alert alert-danger']")
+    public WebElement errorMessage;
+
+
     public void login(String username, String password) {
         usernameInput.sendKeys(username);
         passwordInput.sendKeys(password);
         loginBtn.click();
     }
+
 
 }

@@ -5,17 +5,6 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class CreateUser_StepDefs {
-    @Given("the user is on the login page")
-    public void the_user_is_on_the_login_page() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
-    }
-
-    @When("user login as {string}")
-    public void user_login_as(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
-    }
 
     @When("navigate to {string} module")
     public void navigate_to_module(String string) {
