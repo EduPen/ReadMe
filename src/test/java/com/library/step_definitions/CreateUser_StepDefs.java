@@ -16,13 +16,13 @@ public class CreateUser_StepDefs {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
-    @When("navigate to {string}")
-    public void navigate_to(String string) {
+    @When("navigate to {string} module")
+    public void navigate_to_module(String string) {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
-    @When("click {string}")
-    public void click(String string) {
+    @When("click Add User")
+    public void click_Add_User() {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
@@ -42,18 +42,23 @@ public class CreateUser_StepDefs {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
-
-
     @When("click close button")
     public void click_close_button() {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
+
     @Then("verify closing the “adding”")
     public void verify_closing_the_adding() {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
+    @When("click Edit User")
+    public void click_Edit_User() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
+
     @When("do some valid changes")
     public void do_some_valid_changes(io.cucumber.datatable.DataTable dataTable) {
         // Write code here that turns the phrase above into concrete actions
@@ -65,19 +70,16 @@ public class CreateUser_StepDefs {
         // For other transformations you can register a DataTableType.
         throw new io.cucumber.java.PendingException();
     }
-
     @Then("verify editing")
     public void verify_editing() {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
-
-    @Then("verify closing the “editing")
+    @Then("verify closing the editing")
     public void verify_closing_the_editing() {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
-
 
 
 
