@@ -33,7 +33,7 @@ Feature: As a user ,I should able to search book
   @EUG16-260
   Scenario Outline: searching a specific book by column names
     And navigate to books module
-    And search by <columnInfo>
+    And search by "<columnInfo>"
     Then verify the search with following column information
     Examples:
       | columnInfo    |
