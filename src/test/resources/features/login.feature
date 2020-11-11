@@ -1,4 +1,3 @@
-
 @login
 Feature:As a user, I should be able to login to the library app
 
@@ -25,21 +24,20 @@ Feature:As a user, I should be able to login to the library app
     Then title contains "Library"
 
 
- @EUG16-224 @son
-  Scenario  Enter with invalid credentials
+  @EUG16-224 @son
+  Scenario Outline: Enter with invalid credentials
+    Given the user is on the login page
+    When Users login with invalid "<email>" and "<password>"
+    Then Error "<message>" display
+    Examples:
+      | email             | password | message                             |
+      | student91@library | ABC123   | Sorry, Wrong Email or Password      |
+      | email @emal       | c4vlSAqZ | Please enter a valid email address. |
+      | ABC               |          | Please enter a valid email address. |
+      |                   | c4vlSAqZ | This field is required.             |
+      | student91@library |          | Sorry, Wrong Email or Password      |
+      |                   |          | This field is required.             |
 
-    When Users login with invalid "invalid" and "FPEDLRY3"
-    And user gets this message: "Please enter a valid email address."
 
-    When Users login with invalid "student91@library" and "invalid"
-    And user gets this message: "Sorry, Wrong Email or Password"
 
-    When Users login with invalid "" and "FPEDLRY3"
-    And user gets this message: "This field is required."
-
-    When Users login with invalid "student91@library" and ""
-    And user gets this message: "Sorry, Wrong Email or Password"
-
-    When Users login with invalid "" and ""
-    And user gets this message: "This field is required."
 
