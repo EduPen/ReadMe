@@ -42,15 +42,20 @@ public class LoginStepDefs {
         Assert.assertEquals(expectedpage, actualpage);
     }
 
-    @Then("user logged in page")
-    public void user_logged_in_page() {
-        String actualpage = Driver.get().getTitle();
-        Assert.assertTrue(actualpage.equals("Library"));
+    @Then("title verify login page")
+    public void title_verify_login_page() {
+      if(user_login_as("student")){
+          Assert.assertTrue(Driver.get().getCurrentUrl().contains("books"));
+      } else if(user_login_as("librarian")){
+          Assert.assertTrue(Driver.get().getCurrentUrl().contains("Dashboard"));
+      }
+
     }
 
 
+
     @When("user login as {string}")
-    public void user_login_as(String usertype) {
+    public boolean user_login_as(String usertype) {
 
         Driver.get().get(ConfigurationReader.get("url"));
         String username = null;
@@ -63,6 +68,7 @@ public class LoginStepDefs {
             password = ConfigurationReader.get("librarian_password");
 
         }
+        return false;
     }
 
     @Then("Error {string} display")
