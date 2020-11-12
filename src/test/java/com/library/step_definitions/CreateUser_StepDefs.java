@@ -1,21 +1,25 @@
 package com.library.step_definitions;
 
+import com.library.pages.BooksPage;
+import com.library.pages.UserPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class CreateUser_StepDefs {
 
-    @When("navigate to {string} module")
-    public void navigate_to_module(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    BooksPage booksPage=new BooksPage();
+    UserPage userPage =new UserPage();
+
+
+    @When("navigate to user module")
+    public void navigate_to_user_module() {
+        booksPage.usersModule.click();
     }
 
     @When("click Add User")
     public void click_Add_User() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+       userPage.AddUser.click();
     }
 
     @When("creates new user using following information")
