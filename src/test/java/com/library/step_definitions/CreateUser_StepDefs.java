@@ -18,6 +18,22 @@ public class CreateUser_StepDefs {
         String url = ConfigurationReader.get("url");
         Driver.get().get(url);
     }
+    @When("user login as {string}")
+    public boolean user_login_as(String usertype) {
+
+        Driver.get().get(ConfigurationReader.get("url"));
+        String username = null;
+        String password = null;
+        if (usertype.equals("student_username")) {
+            username = ConfigurationReader.get("student_username");
+            password = ConfigurationReader.get("student_password");
+        } else if (usertype.equals("librarian_username")) {
+            username = ConfigurationReader.get("librarian_username");
+            password = ConfigurationReader.get("librarian_password");
+
+        }
+        return false;
+    }
 
 
     @When("navigate to {string} module")

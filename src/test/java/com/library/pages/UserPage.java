@@ -39,6 +39,8 @@ public class UserPage extends BasePage {
     public WebElement address;
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement saveChanges;
+    @FindBy(css = ".toast-message")
+    public WebElement message;
 
 
     public Select userGroup() {
