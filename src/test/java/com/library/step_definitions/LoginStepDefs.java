@@ -60,14 +60,15 @@ public class LoginStepDefs {
         Driver.get().get(ConfigurationReader.get("url"));
         String username = null;
         String password = null;
-        if (usertype.equals("student_username")) {
+        if (usertype.equals("students")) {
             username = ConfigurationReader.get("student_username");
             password = ConfigurationReader.get("student_password");
-        } else if (usertype.equals("librarian_username")) {
+        } else if (usertype.equals("librarian")) {
             username = ConfigurationReader.get("librarian_username");
             password = ConfigurationReader.get("librarian_password");
 
         }
+        new LoginPage().login(username,password);
         return false;
     }
 

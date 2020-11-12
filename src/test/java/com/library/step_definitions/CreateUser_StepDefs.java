@@ -2,6 +2,7 @@ package com.library.step_definitions;
 
 import com.library.pages.BooksPage;
 import com.library.pages.UserPage;
+import com.library.utilities.BrowserUtils;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -14,8 +15,7 @@ public class CreateUser_StepDefs {
     BooksPage booksPage=new BooksPage();
     UserPage userPage =new UserPage();
 
-
-    @When("navigate to {string} module")
+    @When("navigate to user module")
     public void navigate_to_user_module() {
 
         booksPage.usersModule.click();
@@ -28,6 +28,7 @@ public class CreateUser_StepDefs {
 
     @When("creates new user using following information")
     public void creates_new_user_using_following_information(Map<String,String> informations) {
+
         userPage.fullName.sendKeys(informations.get("Full Name"));
         userPage.email.sendKeys(informations.get("Email"));
         userPage.password.sendKeys(informations.get("Password"));
@@ -42,6 +43,7 @@ public class CreateUser_StepDefs {
 
     @Then("the message  {string} should be displayed")
     public void the_message_should_be_displayed(String string) {
+
         Assert.assertTrue(userPage.message.isDisplayed());
     }
 
