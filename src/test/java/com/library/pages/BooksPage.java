@@ -5,6 +5,17 @@ import org.openqa.selenium.support.FindBy;
 
 public class BooksPage extends BasePage {
 
+
+    @FindBy(xpath = "//a [@href='#dashboard']/ i")
+    public WebElement dashboardModule;
+
+    @FindBy(xpath = "//a [@href='#users']/ i")
+    public WebElement usersModule;
+
+    @FindBy(xpath = "//a [@href='#books']/ i")
+    public WebElement booksModule;
+
+
     @FindBy(partialLinkText = "Add Bo")
     public WebElement AddBook;
 

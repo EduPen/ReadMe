@@ -1,14 +1,18 @@
 package com.library.step_definitions;
 
+import com.library.pages.BooksPage;
+import com.library.pages.LoginPage;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class dashboardInformation_StepDef {
 
+    LoginPage login = new LoginPage();
+    BooksPage booksPage=new BooksPage();
+
     @When("navigate to books module")
     public void navigate_to_books_module() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        booksPage.booksModule.click();
     }
 
     @When("calculate total borrowed books number")
@@ -19,8 +23,7 @@ public class dashboardInformation_StepDef {
 
     @When("navigate to dashboard module")
     public void navigate_to_dashboard_module() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        booksPage.dashboardModule.click();
     }
 
     @Then("verify the barrowed books number are equal")

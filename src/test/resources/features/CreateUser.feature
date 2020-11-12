@@ -1,9 +1,10 @@
+
 Feature: Creating user on  users page
 
   Background:
     Given the user is on the login page
     When user login as "usertype"
-    And navigate to "users" module
+    And navigate to user module
 
   @EUG16-253 @EUG16-224
   Scenario: add users with valid info
