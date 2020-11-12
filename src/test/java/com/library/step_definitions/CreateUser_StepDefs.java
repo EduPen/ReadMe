@@ -6,13 +6,12 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class CreateUser_StepDefs {
-    DashboardPage dashboardPage=new DashboardPage();
+
 
 
     @When("navigate to {string} module")
     public void navigate_to_module(String string) {
 
-        dashboardPage.goModule(string);
     }
 
     @When("click Add User")
