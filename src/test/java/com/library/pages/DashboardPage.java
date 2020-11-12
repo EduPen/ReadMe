@@ -8,10 +8,9 @@ import org.openqa.selenium.support.PageFactory;
 
 public class DashboardPage extends BasePage {
 
-    public DashboardPage(){
+    public DashboardPage() {
 
-        PageFactory.initElements(Driver.get(),
-                this);
+        PageFactory.initElements(Driver.get(), this);
     }
 
     @FindBy(xpath = "//img[@class='d-inline-block align-top']")
