@@ -14,8 +14,28 @@ public class DashboardPage extends BasePage {
                 this);
     }
 
-    @FindBy(xpath = "//img[@class='d-inline-block align-top']")
+    @FindBy(css = "a>img")
     public WebElement logo;
+
+    @FindBy(id = "user_count")
+    public WebElement userCount;
+
+    @FindBy(id= "book_count")
+    public WebElement booksCount;
+
+    @FindBy(id = "borrowed_books")
+    public WebElement BorrowedBooksCount;
+
+    @FindBy(linkText = "Users")
+    public WebElement userText;
+
+    @FindBy(xpath = "Books")
+    public WebElement bookText;
+
+    @FindBy(xpath = "Borrowed Books")
+    public WebElement borrowedBooksText;
+
+
 
 }
 
