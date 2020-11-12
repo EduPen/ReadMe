@@ -3,7 +3,7 @@ Feature: User should be able to see table with default titles
   Background:
     Given the user is on the login page
 
-  @EUG16-252 @EUG16-224
+  @EUG16-252 @EUG16-224  @wip
   Scenario:Table columns names on books page
     When user login as "usertype"
     And navigate to books module
@@ -27,4 +27,4 @@ Feature: User should be able to see table with default titles
       | Borrowed Date       |
       | Planned Return Date |
       | Return Date         |
-      | Is Returned?        |
+      | Is Returned ?        |

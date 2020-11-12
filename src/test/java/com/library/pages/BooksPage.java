@@ -3,8 +3,12 @@ package com.library.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.List;
+
 public class BooksPage extends BasePage {
 
+    @FindBy(xpath = "//thead/tr[1]/th")
+    public List<WebElement> tableTitles;
 
     @FindBy(xpath = "//a [@href='#dashboard']/span")
     public WebElement dashboardModule;
