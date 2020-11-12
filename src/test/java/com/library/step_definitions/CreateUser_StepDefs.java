@@ -2,6 +2,8 @@ package com.library.step_definitions;
 
 import com.library.pages.DashboardPage;
 import com.library.pages.UserPage;
+import com.library.utilities.ConfigurationReader;
+import com.library.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -10,6 +12,12 @@ import java.util.Map;
 
 public class CreateUser_StepDefs {
     UserPage userPage = new UserPage();
+
+    @Given("the user is on the login page")
+    public void the_user_is_on_the_login_page() {
+        String url = ConfigurationReader.get("url");
+        Driver.get().get(url);
+    }
 
 
     @When("navigate to {string} module")
