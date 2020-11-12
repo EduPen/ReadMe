@@ -2,7 +2,7 @@ Feature: Creating user on  users page
 
   Background:
     Given the user is on the login page
-    When user login as "usertype"
+    When user login as "student_username"
     And navigate to "users" module
 
   @EUG16-253 @EUG16-224
