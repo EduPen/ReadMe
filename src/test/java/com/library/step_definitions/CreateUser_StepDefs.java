@@ -1,5 +1,6 @@
 package com.library.step_definitions;
 
+import com.library.pages.DashboardPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -8,8 +9,7 @@ public class CreateUser_StepDefs {
 
     @When("navigate to {string} module")
     public void navigate_to_module(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        new DashboardPage().usersLink.click();
     }
 
     @When("click Add User")
