@@ -1,12 +1,14 @@
 package com.library.step_definitions;
 
 import com.library.pages.DashboardPage;
+import com.library.pages.LoginPage;
 import com.library.pages.UserPage;
 import com.library.utilities.ConfigurationReader;
 import com.library.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 import java.util.Map;
 
@@ -18,8 +20,9 @@ public class CreateUser_StepDefs {
         String url = ConfigurationReader.get("url");
         Driver.get().get(url);
     }
+
     @When("user login as {string}")
-    public boolean user_login_as(String usertype) {
+    public void user_login_as(String usertype) {
 
         Driver.get().get(ConfigurationReader.get("url"));
         String username = null;
@@ -30,10 +33,11 @@ public class CreateUser_StepDefs {
         } else if (usertype.equals("librarian_username")) {
             username = ConfigurationReader.get("librarian_username");
             password = ConfigurationReader.get("librarian_password");
-
         }
-        return false;
+        new LoginPage().login(username, password);
     }
+
+
 
 
     @When("navigate to {string} module")
@@ -56,13 +60,13 @@ public class CreateUser_StepDefs {
         userPage.startDate.sendKeys(informations.get("Start Date"));
         userPage.endDate.sendKeys(informations.get("End Date"));
         userPage.address.sendKeys(informations.get("Address"));
+        userPage.saveChanges.click();
 
     }
 
     @Then("the message  {string} should be displayed")
     public void the_message_should_be_displayed(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+      Assert.assertTrue(userPage.message.isDisplayed());
     }
 
     @When("click close button")
