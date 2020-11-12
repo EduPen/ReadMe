@@ -5,6 +5,9 @@ import com.library.pages.UserPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
+
+import java.util.Map;
 
 public class CreateUser_StepDefs {
 
@@ -12,8 +15,9 @@ public class CreateUser_StepDefs {
     UserPage userPage =new UserPage();
 
 
-    @When("navigate to user module")
+    @When("navigate to {string} module")
     public void navigate_to_user_module() {
+
         booksPage.usersModule.click();
     }
 
@@ -23,21 +27,22 @@ public class CreateUser_StepDefs {
     }
 
     @When("creates new user using following information")
-    public void creates_new_user_using_following_information(io.cucumber.datatable.DataTable dataTable) {
-        // Write code here that turns the phrase above into concrete actions
-        // For automatic transformation, change DataTable to one of
-        // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
-        // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
-        // Double, Byte, Short, Long, BigInteger or BigDecimal.
-        //
-        // For other transformations you can register a DataTableType.
-        throw new io.cucumber.java.PendingException();
+    public void creates_new_user_using_following_information(Map<String,String> informations) {
+        userPage.fullName.sendKeys(informations.get("Full Name"));
+        userPage.email.sendKeys(informations.get("Email"));
+        userPage.password.sendKeys(informations.get("Password"));
+        userPage.userGroup().selectByVisibleText(informations.get("User Group"));
+        userPage.status().selectByVisibleText(informations.get("Status"));
+        userPage.startDate.sendKeys(informations.get("Start Date"));
+        userPage.endDate.sendKeys(informations.get("End Date"));
+        userPage.address.sendKeys(informations.get("Address"));
+        userPage.saveChanges.click();
+
     }
 
     @Then("the message  {string} should be displayed")
     public void the_message_should_be_displayed(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        Assert.assertTrue(userPage.message.isDisplayed());
     }
 
     @When("click close button")
