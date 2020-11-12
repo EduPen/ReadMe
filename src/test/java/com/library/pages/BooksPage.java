@@ -13,14 +13,24 @@ public class BooksPage extends BasePage {
 
     @FindBy(xpath = "//*[contains(@class, 'form-control input-sm input-xsmall input-inline')]")
     public WebElement Search;
-@FindBy(xpath = "//table[@id='tbl_books']")
+
+    @FindBy(xpath = "//table[@id='tbl_books']")
     public WebElement Table;
-@FindBy(xpath = "//*[contains(@class, 'btn btn-primary btn-sm')]")
+
+    @FindBy(xpath = "//*[contains(@class, 'btn btn-primary btn-sm')]")
     public WebElement EditBook;
-@FindBy(xpath = "//button[contains(text(),'Save changes')]")
+
+    @FindBy(xpath = "//button[contains(text(),'Save changes')]")
     public WebElement SaveChanges;
-@FindBy(xpath = "//button[contains(text(),'Close')]")
+
+    @FindBy(xpath = "//button[contains(text(),'Close')]")
     public WebElement Close;
+
+
+    @FindBy(name = "tbl_books_length")
+    public WebElement recordsDropdown;
+
+
 
 
 }
