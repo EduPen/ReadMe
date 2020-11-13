@@ -47,7 +47,10 @@ public class UserPage extends BasePage{
     public WebElement saveChanges;
     @FindBy(css = ".toast-message")
     public WebElement message;
-
+    @FindBy(xpath = "//button[@type='cancel']")
+    public WebElement closeBtn;
+    @FindBy(xpath = "(//table/tbody/tr/td/a)[1]")
+    public  WebElement editUserbtn;
 
     public Select userGroup() {
         return new Select(addUserGroupDropDown);

@@ -49,39 +49,38 @@ public class CreateUser_StepDefs {
 
     @When("click close button")
     public void click_close_button() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        BrowserUtils.waitFor(2);
+       userPage.closeBtn.click();
     }
 
     @Then("verify closing the “adding”")
     public void verify_closing_the_adding() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        //Assertion ??
     }
 
     @When("click Edit User")
     public void click_Edit_User() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        userPage.editUserbtn.click();
     }
 
     @When("do some valid changes")
-    public void do_some_valid_changes(io.cucumber.datatable.DataTable dataTable) {
-        // Write code here that turns the phrase above into concrete actions
-        // For automatic transformation, change DataTable to one of
-        throw new io.cucumber.java.PendingException();
+    public void do_some_valid_changes(Map<String,String> info) {
+        userPage.fullName.clear();
+        userPage.fullName.sendKeys(info.get("Full Name"));
+        userPage.email.clear();
+        userPage.email.sendKeys(info.get("Email"));
+
+        userPage.saveChanges.click();
     }
 
     @Then("verify editing")
     public void verify_editing() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        Assert.assertTrue(userPage.message.isDisplayed());
     }
 
     @Then("verify closing the editing")
     public void verify_closing_the_editing() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        //Assertion ??
     }
 
 
