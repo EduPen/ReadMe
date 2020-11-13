@@ -16,7 +16,11 @@ public class Modules_StepDefs {
         BrowserUtils.waitFor(2);
 
         DashboardPage dashboardPage = new DashboardPage();
-        List<WebElement> expectedModNames = dashboardPage.moduleNames;
+        List<WebElement> modNames = dashboardPage.moduleNames;
+        List<String> expectedModNames = BrowserUtils.getElementsText(modNames);
+
+        System.out.println(expectedModNames.toString());
+        System.out.println(ModuleNames.toString());
 
         Assert.assertEquals("verify that all the Module Names are matching",expectedModNames,ModuleNames);
 
