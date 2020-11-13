@@ -12,22 +12,23 @@ import java.util.Map;
 
 public class CreateUser_StepDefs {
 
-    BooksPage booksPage=new BooksPage();
-    UserPage userPage =new UserPage();
+    BooksPage booksPage = new BooksPage();
+    UserPage userPage = new UserPage();
 
     @When("navigate to user module")
     public void navigate_to_user_module() {
-
         booksPage.usersModule.click();
     }
 
     @When("click Add User")
     public void click_Add_User() {
-       userPage.AddUser.click();
+        userPage.AddUser.click();
+
+
     }
 
     @When("creates new user using following information")
-    public void creates_new_user_using_following_information(Map<String,String> informations) {
+    public void creates_new_user_using_following_information(Map<String, String> informations) {
 
         userPage.fullName.sendKeys(informations.get("Full Name"));
         userPage.email.sendKeys(informations.get("Email"));
@@ -43,19 +44,20 @@ public class CreateUser_StepDefs {
 
     @Then("the message  {string} should be displayed")
     public void the_message_should_be_displayed(String string) {
-
         Assert.assertTrue(userPage.message.isDisplayed());
     }
 
     @When("click close button")
     public void click_close_button() {
         BrowserUtils.waitFor(2);
-       userPage.closeBtn.click();
+        userPage.closeBtn.click();
+
+
     }
 
     @Then("verify closing the “adding”")
     public void verify_closing_the_adding() {
-        //Assertion ??
+        Assert.assertTrue(userPage.closeBtn.isEnabled());
     }
 
     @When("click Edit User")
@@ -64,12 +66,11 @@ public class CreateUser_StepDefs {
     }
 
     @When("do some valid changes")
-    public void do_some_valid_changes(Map<String,String> info) {
+    public void do_some_valid_changes(Map<String, String> info) {
         userPage.fullName.clear();
         userPage.fullName.sendKeys(info.get("Full Name"));
         userPage.email.clear();
         userPage.email.sendKeys(info.get("Email"));
-
         userPage.saveChanges.click();
     }
 
@@ -80,7 +81,9 @@ public class CreateUser_StepDefs {
 
     @Then("verify closing the editing")
     public void verify_closing_the_editing() {
-        //Assertion ??
+        Assert.assertTrue(userPage.closeBtn.isEnabled());
+
+
     }
 
 
