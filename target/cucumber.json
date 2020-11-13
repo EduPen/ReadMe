@@ -1,0 +1,197 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 264089400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 590712600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user login as \"librarian\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"librarian\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1823005200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "navigate to user module",
+            "match": {
+              "location": "com.library.step_definitions.CreateUser_StepDefs.navigate_to_user_module()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:27:12.063Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9677646900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "add users with valid info",
+        "description": "",
+        "id": "creating-user-on--users-page;add-users-with-valid-info",
+        "after": [
+          {
+            "result": {
+              "duration": 2957620800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 427755400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "click Add User",
+            "match": {
+              "location": "com.library.step_definitions.CreateUser_StepDefs.click_Add_User()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2194739400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "creates new user using following information",
+            "match": {
+              "location": "com.library.step_definitions.CreateUser_StepDefs.creates_new_user_using_following_information(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Full Name",
+                  "Mike Smith"
+                ]
+              },
+              {
+                "cells": [
+                  "Email",
+                  "mikesmithnew@email.com"
+                ]
+              },
+              {
+                "cells": [
+                  "Password",
+                  "123456"
+                ]
+              },
+              {
+                "cells": [
+                  "User Group",
+                  "Students"
+                ]
+              },
+              {
+                "cells": [
+                  "Status",
+                  "ACTIVE"
+                ]
+              },
+              {
+                "cells": [
+                  "Start Date",
+                  "11-04-2020"
+                ]
+              },
+              {
+                "cells": [
+                  "End Date",
+                  "11-04-2030"
+                ]
+              },
+              {
+                "cells": [
+                  "Address",
+                  "100 Same st, Anytown, USA, 10001"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 215878300,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the message  \"the user has been created\" should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"the user has been created\"",
+                  "offset": 13
+                }
+              ],
+              "location": "com.library.step_definitions.CreateUser_StepDefs.the_message_should_be_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@EUG16-253"
+          },
+          {
+            "name": "@EUG16-224"
+          }
+        ]
+      }
+    ],
+    "name": "Creating user on  users page",
+    "description": "",
+    "id": "creating-user-on--users-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/CreateUser.feature",
+    "tags": []
+  }
+]
