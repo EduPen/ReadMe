@@ -48,12 +48,12 @@ public class CreateUser_StepDefs {
         BrowserUtils.waitFor(2);
         userPage.closeBtn.click();
 
+
     }
 
     @Then("verify closing the “adding”")
     public void verify_closing_the_adding() {
-        //Assertion ??
-
+        Assert.assertTrue(userPage.closeBtn.isEnabled());
     }
 
     @When("click Edit User")
@@ -75,7 +75,9 @@ public class CreateUser_StepDefs {
 
     @Then("verify closing the editing")
     public void verify_closing_the_editing() {
-//Assertion ??
+        Assert.assertTrue(userPage.closeBtn.isEnabled());
+
+
     }
 
 
