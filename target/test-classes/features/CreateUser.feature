@@ -5,13 +5,13 @@ Feature: Creating user on  users page
     When user login as "librarian"
     And navigate to user module
 
-  @EUG16-253 @EUG16-224
+ @EUG16-253 @EUG16-224
   Scenario: add users with valid info
     And click Add User
     And creates new user using following information
       | Full Name  | Mike Smith                       |
-      | Email      | mikesmith335@email.com           |
-      | Password   | 123456                           |
+      | Email      | mikesmith555@email.com              |
+      | Password   | 123456                            |
       | User Group | Students                         |
       | Status     | ACTIVE                           |
       | Start Date | 11-04-2020                       |
