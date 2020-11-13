@@ -1,0 +1,5322 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 996200,
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user login as \"usertype\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"usertype\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "navigate to books module",
+            "match": {
+              "location": "com.library.step_definitions.dashboardInformation_StepDef.navigate_to_books_module()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.048Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Librarian adds new book by filling up with valid credentials",
+        "description": "",
+        "id": "as-a-librarian--i-should-be-able-to-add-a-book-from-the-books-page;librarian-adds-new-book-by-filling-up-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "click Add book button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "creates new book using following information",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "Book Name",
+                  "Selenium Book"
+                ]
+              },
+              {
+                "cells": [
+                  "Author",
+                  "Jamal D"
+                ]
+              },
+              {
+                "cells": [
+                  "ISBN",
+                  "12345"
+                ]
+              },
+              {
+                "cells": [
+                  "Year",
+                  "2020"
+                ]
+              },
+              {
+                "cells": [
+                  "Book Category",
+                  "Action and Adventure"
+                ]
+              },
+              {
+                "cells": [
+                  "Description",
+                  ""
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 18,
+            "name": "the message \"the book has been added\" should be displayed",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@EUG16-268"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1994300,
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 997100,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user login as \"usertype\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"usertype\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "navigate to books module",
+            "match": {
+              "location": "com.library.step_definitions.dashboardInformation_StepDef.navigate_to_books_module()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.143Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Edit the book information",
+        "description": "",
+        "id": "as-a-librarian--i-should-be-able-to-add-a-book-from-the-books-page;edit-the-book-information",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 22,
+            "name": "click Edit Book",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23,
+            "name": "do some info changes",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "Book Name",
+                  "Toni Morrison"
+                ]
+              },
+              {
+                "cells": [
+                  "Author",
+                  "Beloved"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 26,
+            "name": "click save changes",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 27,
+            "name": "verify the book info edited",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@EUG16-269"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user login as \"usertype\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"usertype\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "navigate to books module",
+            "match": {
+              "location": "com.library.step_definitions.dashboardInformation_StepDef.navigate_to_books_module()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.155Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "Cancel the editing",
+        "description": "",
+        "id": "as-a-librarian--i-should-be-able-to-add-a-book-from-the-books-page;cancel-the-editing",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 31,
+            "name": "click Edit Book",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "click close button",
+            "match": {
+              "location": "com.library.step_definitions.CreateUser_StepDefs.click_close_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 33,
+            "name": "verify the closing edit",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@EUG16-270"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 996700,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user login as \"usertype\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"usertype\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "navigate to books module",
+            "match": {
+              "location": "com.library.step_definitions.dashboardInformation_StepDef.navigate_to_books_module()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.165Z",
+        "before": [
+          {
+            "result": {
+              "duration": 997500,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 36,
+        "name": "Cancel the add book by clicking the Cancel button",
+        "description": "",
+        "id": "as-a-librarian--i-should-be-able-to-add-a-book-from-the-books-page;cancel-the-add-book-by-clicking-the-cancel-button",
+        "after": [
+          {
+            "result": {
+              "duration": 997000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 37,
+            "name": "click Add book button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 38,
+            "name": "click close button",
+            "match": {
+              "location": "com.library.step_definitions.CreateUser_StepDefs.click_close_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 39,
+            "name": "user is on the Books Module",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@EUG16-271"
+          }
+        ]
+      }
+    ],
+    "name": "As a librarian, I should be able to add a book from the books page",
+    "description": "",
+    "id": "as-a-librarian--i-should-be-able-to-add-a-book-from-the-books-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/AddBooks.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 996800,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user login as \"usertype\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"usertype\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.181Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Borrowing the book",
+        "description": "",
+        "id": "borrowing-books;borrowing-the-book",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1994500,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "Click borrow book button",
+            "match": {
+              "location": "com.library.step_definitions.BorrowingStepDef.click_borrow_book_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "the message “The book has been borrowed” is displayed",
+            "match": {
+              "location": "com.library.step_definitions.BorrowingStepDef.the_message_The_book_has_been_borrowed_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Barrow"
+          },
+          {
+            "name": "@EUG16-247"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2991600,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user login as \"usertype\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"usertype\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.203Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Returning the book",
+        "description": "",
+        "id": "borrowing-books;returning-the-book",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 998400,
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "navigate to borrowing book page",
+            "match": {
+              "location": "com.library.step_definitions.BorrowingStepDef.navigate_to_borrowing_book_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 996800,
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "click return button",
+            "match": {
+              "location": "com.library.step_definitions.BorrowingStepDef.click_return_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "verify that borrowed book returned",
+            "match": {
+              "location": "com.library.step_definitions.BorrowingStepDef.verify_that_borrowed_book_returned()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Barrow"
+          },
+          {
+            "name": "@EUG16-246"
+          },
+          {
+            "name": "@EUG16-224"
+          }
+        ]
+      }
+    ],
+    "name": "Borrowing books",
+    "description": "",
+    "id": "borrowing-books",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Borrowing.feature",
+    "tags": [
+      {
+        "name": "@Barrow",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 997800,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user login as \"usertype\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"usertype\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 996600,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "navigate to user module",
+            "match": {
+              "location": "com.library.step_definitions.CreateUser_StepDefs.navigate_to_user_module()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.219Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "add users with valid info",
+        "description": "",
+        "id": "creating-user-on--users-page;add-users-with-valid-info",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 997900,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "click Add User",
+            "match": {
+              "location": "com.library.step_definitions.CreateUser_StepDefs.click_Add_User()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "creates new user using following information",
+            "match": {
+              "location": "com.library.step_definitions.CreateUser_StepDefs.creates_new_user_using_following_information(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Full Name",
+                  "Mike Smith"
+                ]
+              },
+              {
+                "cells": [
+                  "Email",
+                  "mikesmith@email.com"
+                ]
+              },
+              {
+                "cells": [
+                  "Password",
+                  "12345"
+                ]
+              },
+              {
+                "cells": [
+                  "User Group",
+                  "Students"
+                ]
+              },
+              {
+                "cells": [
+                  "Status",
+                  "Active"
+                ]
+              },
+              {
+                "cells": [
+                  "Start Date",
+                  "11-04-2020"
+                ]
+              },
+              {
+                "cells": [
+                  "End Date",
+                  "11-04-2030"
+                ]
+              },
+              {
+                "cells": [
+                  "Address",
+                  "100 Same st, Anytown, USA, 10001"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "the message  \"the user has been created\" should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"the user has been created\"",
+                  "offset": 13
+                }
+              ],
+              "location": "com.library.step_definitions.CreateUser_StepDefs.the_message_should_be_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@EUG16-253"
+          },
+          {
+            "name": "@EUG16-224"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user login as \"usertype\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"usertype\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "navigate to user module",
+            "match": {
+              "location": "com.library.step_definitions.CreateUser_StepDefs.navigate_to_user_module()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.235Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Closing the adding user",
+        "description": "",
+        "id": "creating-user-on--users-page;closing-the-adding-user",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 995600,
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "click Add User",
+            "match": {
+              "location": "com.library.step_definitions.CreateUser_StepDefs.click_Add_User()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 997200,
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "click close button",
+            "match": {
+              "location": "com.library.step_definitions.CreateUser_StepDefs.click_close_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "verify closing the “adding”",
+            "match": {
+              "location": "com.library.step_definitions.CreateUser_StepDefs.verify_closing_the_adding()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@EUG16-254"
+          },
+          {
+            "name": "@EUG16-224"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user login as \"usertype\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"usertype\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 996900,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "navigate to user module",
+            "match": {
+              "location": "com.library.step_definitions.CreateUser_StepDefs.navigate_to_user_module()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.245Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "edit user info",
+        "description": "",
+        "id": "creating-user-on--users-page;edit-user-info",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "click Edit User",
+            "match": {
+              "location": "com.library.step_definitions.CreateUser_StepDefs.click_Edit_User()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "do some valid changes",
+            "match": {
+              "location": "com.library.step_definitions.CreateUser_StepDefs.do_some_valid_changes(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Full Name",
+                  "Smith Mike"
+                ]
+              },
+              {
+                "cells": [
+                  "Email",
+                  "smithmike@email.com"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "verify editing",
+            "match": {
+              "location": "com.library.step_definitions.CreateUser_StepDefs.verify_editing()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@EUG16-255"
+          },
+          {
+            "name": "@EUG16-224"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 998400,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user login as \"usertype\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"usertype\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "navigate to user module",
+            "match": {
+              "location": "com.library.step_definitions.CreateUser_StepDefs.navigate_to_user_module()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.251Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 38,
+        "name": "Closing the editing user",
+        "description": "",
+        "id": "creating-user-on--users-page;closing-the-editing-user",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1993500,
+              "status": "skipped"
+            },
+            "line": 39,
+            "name": "click Edit User",
+            "match": {
+              "location": "com.library.step_definitions.CreateUser_StepDefs.click_Edit_User()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 998300,
+              "status": "skipped"
+            },
+            "line": 40,
+            "name": "click close button",
+            "match": {
+              "location": "com.library.step_definitions.CreateUser_StepDefs.click_close_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 41,
+            "name": "verify closing the editing",
+            "match": {
+              "location": "com.library.step_definitions.CreateUser_StepDefs.verify_closing_the_editing()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@EUG16-256"
+          },
+          {
+            "name": "@EUG16-224"
+          }
+        ]
+      }
+    ],
+    "name": "Creating user on  users page",
+    "description": "",
+    "id": "creating-user-on--users-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/CreateUser.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-12T22:22:15.261Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Librarian should see three modules on Dashboard page",
+        "description": "",
+        "id": "as-a-librarian--i-should-able-to-see-three-modules-on-dashboard-page;librarian-should-see-three-modules-on-dashboard-page",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 997700,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user login as \"librarian_username\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"librarian_username\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "users see following modules",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "Users"
+                ]
+              },
+              {
+                "cells": [
+                  "Books"
+                ]
+              },
+              {
+                "cells": [
+                  "Borrowed Books"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@EUG16-251"
+          },
+          {
+            "name": "@EUG16-224"
+          }
+        ]
+      }
+    ],
+    "name": "As a librarian, I should able to see three modules on Dashboard page",
+    "description": "",
+    "id": "as-a-librarian--i-should-able-to-see-three-modules-on-dashboard-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Modules.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 996900,
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user login as \"usertype\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"usertype\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 997300,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "navigate to books module",
+            "match": {
+              "location": "com.library.step_definitions.dashboardInformation_StepDef.navigate_to_books_module()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.275Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "searching book with different categories",
+        "description": "",
+        "id": "as-a-user--i-should-able-to-search-book;searching-book-with-different-categories",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "categories list should have following names:",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "Action and   Adventure"
+                ]
+              },
+              {
+                "cells": [
+                  "Anthology"
+                ]
+              },
+              {
+                "cells": [
+                  "Classic"
+                ]
+              },
+              {
+                "cells": [
+                  "Comic and Graphic Novel"
+                ]
+              },
+              {
+                "cells": [
+                  "Crime and Detective"
+                ]
+              },
+              {
+                "cells": [
+                  "Drama"
+                ]
+              },
+              {
+                "cells": [
+                  "Fable"
+                ]
+              },
+              {
+                "cells": [
+                  "Fairy Tale"
+                ]
+              },
+              {
+                "cells": [
+                  "Fan-Fiction"
+                ]
+              },
+              {
+                "cells": [
+                  "Fantasy"
+                ]
+              },
+              {
+                "cells": [
+                  "Historical Fiction"
+                ]
+              },
+              {
+                "cells": [
+                  "Horror"
+                ]
+              },
+              {
+                "cells": [
+                  "Science Fiction"
+                ]
+              },
+              {
+                "cells": [
+                  "Biography/Autobiography"
+                ]
+              },
+              {
+                "cells": [
+                  "Humor"
+                ]
+              },
+              {
+                "cells": [
+                  "Romance"
+                ]
+              },
+              {
+                "cells": [
+                  "Short Story"
+                ]
+              },
+              {
+                "cells": [
+                  "Essay"
+                ]
+              },
+              {
+                "cells": [
+                  "Memoir"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@EUG16-258"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 997100,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user login as \"usertype\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"usertype\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "navigate to books module",
+            "match": {
+              "location": "com.library.step_definitions.dashboardInformation_StepDef.navigate_to_books_module()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.287Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 39,
+        "name": "searching a specific book by column names",
+        "description": "",
+        "id": "as-a-user--i-should-able-to-search-book;searching-a-specific-book-by-column-names;;2",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 35,
+            "name": "search by \"12345\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 36,
+            "name": "verify the search with following column information",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@EUG16-260"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user login as \"usertype\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"usertype\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 997200,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "navigate to books module",
+            "match": {
+              "location": "com.library.step_definitions.dashboardInformation_StepDef.navigate_to_books_module()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.296Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 40,
+        "name": "searching a specific book by column names",
+        "description": "",
+        "id": "as-a-user--i-should-able-to-search-book;searching-a-specific-book-by-column-names;;3",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 35,
+            "name": "search by \"Selenium Book\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 36,
+            "name": "verify the search with following column information",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@EUG16-260"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user login as \"usertype\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"usertype\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "navigate to books module",
+            "match": {
+              "location": "com.library.step_definitions.dashboardInformation_StepDef.navigate_to_books_module()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.311Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 41,
+        "name": "searching a specific book by column names",
+        "description": "",
+        "id": "as-a-user--i-should-able-to-search-book;searching-a-specific-book-by-column-names;;4",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 35,
+            "name": "search by \"Jamal D\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 36,
+            "name": "verify the search with following column information",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@EUG16-260"
+          }
+        ]
+      }
+    ],
+    "name": "As a user ,I should able to search book",
+    "description": "",
+    "id": "as-a-user--i-should-able-to-search-book",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/SearchBox.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.326Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Library App See several modules once login",
+        "description": "",
+        "id": "as-a-user--i-should-be-able-to-see-several-modules-once-login.;library-app-see-several-modules-once-login",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user login as \"librarians\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"librarians\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "user see following modules",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "Dashboard"
+                ]
+              },
+              {
+                "cells": [
+                  "Books"
+                ]
+              },
+              {
+                "cells": [
+                  "Borrowing Books"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@EUG16-263"
+          },
+          {
+            "name": "@EUG16-224"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.336Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Library App See several modules once login",
+        "description": "",
+        "id": "as-a-user--i-should-be-able-to-see-several-modules-once-login.;library-app-see-several-modules-once-login",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "user login as \"students\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"students\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "user see following modules",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "Books"
+                ]
+              },
+              {
+                "cells": [
+                  "Borrowing Books"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@EUG16-228"
+          },
+          {
+            "name": "@EUG16-224"
+          }
+        ]
+      }
+    ],
+    "name": "As a user, I should be able to see several modules once login.",
+    "description": "",
+    "id": "as-a-user--i-should-be-able-to-see-several-modules-once-login.",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/SeeSeveralModules.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.356Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Table columns names on books page",
+        "description": "",
+        "id": "user-should-be-able-to-see-table-with-default-titles;table-columns-names-on-books-page",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8976800,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user login as \"usertype\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"usertype\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 996300,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "navigate to books module",
+            "match": {
+              "location": "com.library.step_definitions.dashboardInformation_StepDef.navigate_to_books_module()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "verifies books table titles as",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "Actions"
+                ]
+              },
+              {
+                "cells": [
+                  "ISBN"
+                ]
+              },
+              {
+                "cells": [
+                  "Name"
+                ]
+              },
+              {
+                "cells": [
+                  "Author"
+                ]
+              },
+              {
+                "cells": [
+                  "Category"
+                ]
+              },
+              {
+                "cells": [
+                  "Year"
+                ]
+              },
+              {
+                "cells": [
+                  "Borrowed By"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@EUG16-252"
+          },
+          {
+            "name": "@EUG16-224"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 997400,
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.402Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "borrowing book tables name verification",
+        "description": "",
+        "id": "user-should-be-able-to-see-table-with-default-titles;borrowing-book-tables-name-verification",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "user login as \"students\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"students\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23,
+            "name": "navigate to borrowing  book page",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "verifies borrowed books table titles as",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "Actions"
+                ]
+              },
+              {
+                "cells": [
+                  "Book Name"
+                ]
+              },
+              {
+                "cells": [
+                  "Borrowed Date"
+                ]
+              },
+              {
+                "cells": [
+                  "Planned Return Date"
+                ]
+              },
+              {
+                "cells": [
+                  "Return Date"
+                ]
+              },
+              {
+                "cells": [
+                  "Is Returned?"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "User should be able to see table with default titles",
+    "description": "",
+    "id": "user-should-be-able-to-see-table-with-default-titles",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/VerifyTableTitle.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user login as \"usertype\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"usertype\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 996900,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "navigate to books module",
+            "match": {
+              "location": "com.library.step_definitions.dashboardInformation_StepDef.navigate_to_books_module()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.429Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "default record is 10",
+        "description": "",
+        "id": "as-a-user--i-should-be-able-to-see-book-records-on-user-page;default-record-is-10",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "the default record shows 10",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@EUG16-242"
+          },
+          {
+            "name": "@EUG16-224"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user login as \"usertype\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"usertype\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 996500,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "navigate to books module",
+            "match": {
+              "location": "com.library.step_definitions.dashboardInformation_StepDef.navigate_to_books_module()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.445Z",
+        "before": [
+          {
+            "result": {
+              "duration": 998200,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Show records for count options",
+        "description": "",
+        "id": "as-a-user--i-should-be-able-to-see-book-records-on-user-page;show-records-for-count-options;;2",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "records options have \"5\" numbers",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@EUG16-267"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user login as \"usertype\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"usertype\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "navigate to books module",
+            "match": {
+              "location": "com.library.step_definitions.dashboardInformation_StepDef.navigate_to_books_module()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.467Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Show records for count options",
+        "description": "",
+        "id": "as-a-user--i-should-be-able-to-see-book-records-on-user-page;show-records-for-count-options;;3",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "records options have \"10\" numbers",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@EUG16-267"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 997500,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user login as \"usertype\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"usertype\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "navigate to books module",
+            "match": {
+              "location": "com.library.step_definitions.dashboardInformation_StepDef.navigate_to_books_module()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.480Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Show records for count options",
+        "description": "",
+        "id": "as-a-user--i-should-be-able-to-see-book-records-on-user-page;show-records-for-count-options;;4",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "records options have \"15\" numbers",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@EUG16-267"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 997100,
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user login as \"usertype\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"usertype\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 996900,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "navigate to books module",
+            "match": {
+              "location": "com.library.step_definitions.dashboardInformation_StepDef.navigate_to_books_module()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.486Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Show records for count options",
+        "description": "",
+        "id": "as-a-user--i-should-be-able-to-see-book-records-on-user-page;show-records-for-count-options;;5",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "records options have \"50\" numbers",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@EUG16-267"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user login as \"usertype\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"usertype\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "navigate to books module",
+            "match": {
+              "location": "com.library.step_definitions.dashboardInformation_StepDef.navigate_to_books_module()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.496Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Show records for count options",
+        "description": "",
+        "id": "as-a-user--i-should-be-able-to-see-book-records-on-user-page;show-records-for-count-options;;6",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "records options have \"100\" numbers",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@EUG16-267"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 997700,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user login as \"usertype\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"usertype\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "navigate to books module",
+            "match": {
+              "location": "com.library.step_definitions.dashboardInformation_StepDef.navigate_to_books_module()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.505Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Show records for count options",
+        "description": "",
+        "id": "as-a-user--i-should-be-able-to-see-book-records-on-user-page;show-records-for-count-options;;7",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "records options have \"200\" numbers",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@EUG16-267"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 996900,
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user login as \"usertype\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"usertype\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 996900,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "navigate to books module",
+            "match": {
+              "location": "com.library.step_definitions.dashboardInformation_StepDef.navigate_to_books_module()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.513Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Show records for count options",
+        "description": "",
+        "id": "as-a-user--i-should-be-able-to-see-book-records-on-user-page;show-records-for-count-options;;8",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "records options have \"500\" numbers",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@EUG16-267"
+          }
+        ]
+      }
+    ],
+    "name": "As a user, I should be able to see book records on user page",
+    "description": "",
+    "id": "as-a-user--i-should-be-able-to-see-book-records-on-user-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/books.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user login as \"usertype\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"usertype\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 996500,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "navigate to books module",
+            "match": {
+              "location": "com.library.step_definitions.dashboardInformation_StepDef.navigate_to_books_module()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.522Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Total borrowed books number on Dashboard",
+        "description": "",
+        "id": "as-a-librarian--i-should-able-to-see-total-books--users-and-borrowed-books-information-on-the-dashboard-page;total-borrowed-books-number-on-dashboard",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 997500,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "calculate total borrowed books number",
+            "match": {
+              "location": "com.library.step_definitions.dashboardInformation_StepDef.calculate_total_borrowed_books_number()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "navigate to dashboard module",
+            "match": {
+              "location": "com.library.step_definitions.dashboardInformation_StepDef.navigate_to_dashboard_module()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "verify the barrowed books number are equal",
+            "match": {
+              "location": "com.library.step_definitions.dashboardInformation_StepDef.verify_the_barrowed_books_number_are_equal()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Dash"
+          },
+          {
+            "name": "@EUG16-224"
+          },
+          {
+            "name": "@EUG16-262"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user login as \"usertype\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"usertype\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "navigate to books module",
+            "match": {
+              "location": "com.library.step_definitions.dashboardInformation_StepDef.navigate_to_books_module()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.543Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Total users number on Dashboard",
+        "description": "",
+        "id": "as-a-librarian--i-should-able-to-see-total-books--users-and-borrowed-books-information-on-the-dashboard-page;total-users-number-on-dashboard",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "calculate total books number",
+            "match": {
+              "location": "com.library.step_definitions.dashboardInformation_StepDef.calculate_total_books_number()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "navigate to dashboard module",
+            "match": {
+              "location": "com.library.step_definitions.dashboardInformation_StepDef.navigate_to_dashboard_module()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "verify the users  number are equal",
+            "match": {
+              "location": "com.library.step_definitions.dashboardInformation_StepDef.verify_the_users_number_are_equal()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Dash"
+          },
+          {
+            "name": "@EUG16-224"
+          },
+          {
+            "name": "@EUG16-222"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user login as \"usertype\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"usertype\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 997700,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "navigate to books module",
+            "match": {
+              "location": "com.library.step_definitions.dashboardInformation_StepDef.navigate_to_books_module()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.553Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Total books number on Dashboard",
+        "description": "",
+        "id": "as-a-librarian--i-should-able-to-see-total-books--users-and-borrowed-books-information-on-the-dashboard-page;total-books-number-on-dashboard",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "calculate total (active and inactive ) users",
+            "match": {
+              "location": "com.library.step_definitions.dashboardInformation_StepDef.calculate_total_active_and_inactive_users()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 997200,
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "navigate to dashboard module",
+            "match": {
+              "location": "com.library.step_definitions.dashboardInformation_StepDef.navigate_to_dashboard_module()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 996500,
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "verify the books numbers are equal",
+            "match": {
+              "location": "com.library.step_definitions.dashboardInformation_StepDef.verify_the_books_numbers_are_equal()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Dash"
+          },
+          {
+            "name": "@EUG16-224"
+          },
+          {
+            "name": "@EUG16-223"
+          }
+        ]
+      }
+    ],
+    "name": "As a librarian, I should able to see total books, users and borrowed books information on the Dashboard page",
+    "description": "",
+    "id": "as-a-librarian--i-should-able-to-see-total-books--users-and-borrowed-books-information-on-the-dashboard-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/dashboardInformation.feature",
+    "tags": [
+      {
+        "name": "@Dash",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@EUG16-224",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 7
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.563Z",
+        "before": [
+          {
+            "result": {
+              "duration": 997100,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "verify login",
+        "description": "",
+        "id": "as-a-user--i-should-be-able-to-login-to-the-library-app;verify-login;;2",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 997400,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user enter \"student70@library\" and enter \"FPEDLRY3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"student70@library\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"FPEDLRY3\"",
+                  "offset": 41
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.user_enter_and_enter(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "title verify login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.title_verify_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@EUG16-259"
+          },
+          {
+            "name": "@EUG16-224"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.575Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "verify login",
+        "description": "",
+        "id": "as-a-user--i-should-be-able-to-login-to-the-library-app;verify-login;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 996400,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 998300,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user enter \"student91@library\" and enter \"c4vlSAqZ\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"student91@library\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"c4vlSAqZ\"",
+                  "offset": 41
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.user_enter_and_enter(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "title verify login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.title_verify_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@EUG16-259"
+          },
+          {
+            "name": "@EUG16-224"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 998700,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.589Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "verify login",
+        "description": "",
+        "id": "as-a-user--i-should-be-able-to-login-to-the-library-app;verify-login;;4",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user enter \"student92@library\" and enter \"7kPVRH29\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"student92@library\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"7kPVRH29\"",
+                  "offset": 41
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.user_enter_and_enter(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "title verify login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.title_verify_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@EUG16-259"
+          },
+          {
+            "name": "@EUG16-224"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 996600,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.597Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "verify login",
+        "description": "",
+        "id": "as-a-user--i-should-be-able-to-login-to-the-library-app;verify-login;;5",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 998700,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user enter \"librarian18@library\" and enter \"rKG2sP88\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"librarian18@library\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"rKG2sP88\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.user_enter_and_enter(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "title verify login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.title_verify_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@EUG16-259"
+          },
+          {
+            "name": "@EUG16-224"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 997300,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.604Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "verify role login",
+        "description": "",
+        "id": "as-a-user--i-should-be-able-to-login-to-the-library-app;verify-role-login",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 997000,
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "user login as \"librarian\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"librarian\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "title verify login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.title_verify_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@EUG16-257"
+          },
+          {
+            "name": "@EUG16-224"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.612Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 34,
+        "name": "Enter with invalid credentials",
+        "description": "",
+        "id": "as-a-user--i-should-be-able-to-login-to-the-library-app;enter-with-invalid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1996000,
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "Users login with invalid \"student91@library\" and \"ABC123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"student91@library\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"ABC123\"",
+                  "offset": 49
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.users_login_with_invalid_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 996700,
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "Error \"Sorry, Wrong Email or Password\" display",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sorry, Wrong Email or Password\"",
+                  "offset": 6
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.error_display(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@EUG16-224"
+          },
+          {
+            "name": "@log"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.628Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 35,
+        "name": "Enter with invalid credentials",
+        "description": "",
+        "id": "as-a-user--i-should-be-able-to-login-to-the-library-app;enter-with-invalid-credentials;;3",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 996500,
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "Users login with invalid \"email @emal\" and \"c4vlSAqZ\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"email @emal\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"c4vlSAqZ\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.users_login_with_invalid_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "Error \"Please enter a valid email address.\" display",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Please enter a valid email address.\"",
+                  "offset": 6
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.error_display(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@EUG16-224"
+          },
+          {
+            "name": "@log"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.635Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 36,
+        "name": "Enter with invalid credentials",
+        "description": "",
+        "id": "as-a-user--i-should-be-able-to-login-to-the-library-app;enter-with-invalid-credentials;;4",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 997000,
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 996300,
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "Users login with invalid \"ABC\" and \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ABC\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 35
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.users_login_with_invalid_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "Error \"Please enter a valid email address.\" display",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Please enter a valid email address.\"",
+                  "offset": 6
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.error_display(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@EUG16-224"
+          },
+          {
+            "name": "@log"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 997400,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.640Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 37,
+        "name": "Enter with invalid credentials",
+        "description": "",
+        "id": "as-a-user--i-should-be-able-to-login-to-the-library-app;enter-with-invalid-credentials;;5",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "Users login with invalid \"\" and \"c4vlSAqZ\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"c4vlSAqZ\"",
+                  "offset": 32
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.users_login_with_invalid_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "Error \"This field is required.\" display",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"This field is required.\"",
+                  "offset": 6
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.error_display(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@EUG16-224"
+          },
+          {
+            "name": "@log"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 997800,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.648Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 38,
+        "name": "Enter with invalid credentials",
+        "description": "",
+        "id": "as-a-user--i-should-be-able-to-login-to-the-library-app;enter-with-invalid-credentials;;6",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 996700,
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "Users login with invalid \"student91@library\" and \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"student91@library\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 49
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.users_login_with_invalid_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "Error \"Sorry, Wrong Email or Password\" display",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sorry, Wrong Email or Password\"",
+                  "offset": 6
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.error_display(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@EUG16-224"
+          },
+          {
+            "name": "@log"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.655Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 39,
+        "name": "Enter with invalid credentials",
+        "description": "",
+        "id": "as-a-user--i-should-be-able-to-login-to-the-library-app;enter-with-invalid-credentials;;7",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 996900,
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "Users login with invalid \"\" and \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 32
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.users_login_with_invalid_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "Error \"This field is required.\" display",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"This field is required.\"",
+                  "offset": 6
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.error_display(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@EUG16-224"
+          },
+          {
+            "name": "@log"
+          }
+        ]
+      }
+    ],
+    "name": "As a user, I should be able to login to the library app",
+    "description": "",
+    "id": "as-a-user--i-should-be-able-to-login-to-the-library-app",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/login.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.662Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "verify login",
+        "description": "",
+        "id": "as-a-user--i-should-be-able-to-logout-from-the-library-app;verify-login;;2",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 997900,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user enter \"student70@library\" and enter \"FPEDLRY3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"student70@library\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"FPEDLRY3\"",
+                  "offset": 41
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.user_enter_and_enter(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user logged out",
+            "match": {
+              "location": "com.library.step_definitions.logout_StepDef.user_logged_out()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 995400,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "verify user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.logout_StepDef.verify_user_is_on_the_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@logout"
+          },
+          {
+            "name": "@EUG16-259"
+          },
+          {
+            "name": "@EUG16-224"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.670Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "verify login",
+        "description": "",
+        "id": "as-a-user--i-should-be-able-to-logout-from-the-library-app;verify-login;;3",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 997400,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user enter \"student91@library\" and enter \"c4vlSAqZ\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"student91@library\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"c4vlSAqZ\"",
+                  "offset": 41
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.user_enter_and_enter(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user logged out",
+            "match": {
+              "location": "com.library.step_definitions.logout_StepDef.user_logged_out()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "verify user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.logout_StepDef.verify_user_is_on_the_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@logout"
+          },
+          {
+            "name": "@EUG16-259"
+          },
+          {
+            "name": "@EUG16-224"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.674Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "verify login",
+        "description": "",
+        "id": "as-a-user--i-should-be-able-to-logout-from-the-library-app;verify-login;;4",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 998600,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user enter \"student92@library\" and enter \"7kPVRH29\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"student92@library\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"7kPVRH29\"",
+                  "offset": 41
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.user_enter_and_enter(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 994500,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user logged out",
+            "match": {
+              "location": "com.library.step_definitions.logout_StepDef.user_logged_out()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "verify user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.logout_StepDef.verify_user_is_on_the_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@logout"
+          },
+          {
+            "name": "@EUG16-259"
+          },
+          {
+            "name": "@EUG16-224"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.679Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "verify login",
+        "description": "",
+        "id": "as-a-user--i-should-be-able-to-logout-from-the-library-app;verify-login;;5",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 998000,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user enter \"librarian18@library\" and enter \"rKG2sP88\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"librarian18@library\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"rKG2sP88\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.user_enter_and_enter(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user logged out",
+            "match": {
+              "location": "com.library.step_definitions.logout_StepDef.user_logged_out()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "verify user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.logout_StepDef.verify_user_is_on_the_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@logout"
+          },
+          {
+            "name": "@EUG16-259"
+          },
+          {
+            "name": "@EUG16-224"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:22:15.684Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Verify logout",
+        "description": "",
+        "id": "as-a-user--i-should-be-able-to-logout-from-the-library-app;verify-logout",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "user login as \"usertype\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"usertype\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "user logged out",
+            "match": {
+              "location": "com.library.step_definitions.logout_StepDef.user_logged_out()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "verify user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.logout_StepDef.verify_user_is_on_the_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@logout"
+          },
+          {
+            "name": "@EUG16-261"
+          },
+          {
+            "name": "@EUG16-224"
+          }
+        ]
+      }
+    ],
+    "name": "As a user, I should be able to logout from the library app",
+    "description": "",
+    "id": "as-a-user--i-should-be-able-to-logout-from-the-library-app",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/logout.feature",
+    "tags": [
+      {
+        "name": "@logout",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
