@@ -24,7 +24,7 @@ public class BooksPage extends BasePage {
     public WebElement AddBook;
 
     @FindBy(css = "#book_categories")
-    public WebElement BookCatagories;
+    public WebElement BookCategories;
 
     @FindBy(xpath = "//*[contains(@class, 'form-control input-sm input-xsmall input-inline')]")
     public WebElement Search;
