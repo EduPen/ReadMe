@@ -22,7 +22,7 @@ Feature: Creating user on  users page
   @EUG16-254 @EUG16-224
   Scenario: Closing the adding user
     And click Add User
-    And verify closing the “adding”
+    And verify closing the adding
     Then click close button
 
   @EUG16-255 @EUG16-224

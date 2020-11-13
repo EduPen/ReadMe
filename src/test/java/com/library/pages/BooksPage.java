@@ -26,16 +26,29 @@ public class BooksPage extends BasePage {
     @FindBy(css = "#book_categories")
     public WebElement BookCategories;
 
-    @FindBy(xpath = "//*[contains(@class, 'form-control input-sm input-xsmall input-inline')]")
-    public WebElement Search;
+    @FindBy(css = "#book_categories>option")
+    public  List<WebElement> bookCategoriesList;
+
+    @FindBy(xpath = "//input[@type='search']")
+    public WebElement searchBook;
+
 @FindBy(xpath = "//table[@id='tbl_books']")
     public WebElement Table;
+
 @FindBy(xpath = "//*[contains(@class, 'btn btn-primary btn-sm')]")
     public WebElement EditBook;
+
 @FindBy(xpath = "//button[contains(text(),'Save changes')]")
     public WebElement SaveChanges;
+
 @FindBy(xpath = "//button[contains(text(),'Close')]")
     public WebElement Close;
 
+
+    @FindBy(xpath = "//table[@id='tbl_books']/tbody/tr[1]/td[3]")
+    public WebElement bookNameBox;
+
+    @FindBy(xpath = "//table[@id='tbl_books']/tbody/tr[1]/td[4]")
+    public WebElement authorNAmeBox;
 
 }

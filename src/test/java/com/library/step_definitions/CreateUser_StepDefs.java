@@ -55,7 +55,7 @@ public class CreateUser_StepDefs {
 
     }
 
-    @Then("verify closing the “adding”")
+    @Then("verify closing the adding")
     public void verify_closing_the_adding() {
         Assert.assertTrue(userPage.closeBtn.isEnabled());
     }
