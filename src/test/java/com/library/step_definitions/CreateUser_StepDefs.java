@@ -49,6 +49,7 @@ public class CreateUser_StepDefs {
 
     @When("click close button")
     public void click_close_button() {
+        BrowserUtils.waitFor(2);
        userPage.closeBtn.click();
     }
 
