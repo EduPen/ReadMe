@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 180143300,
+              "duration": 177520800,
               "status": "passed"
             },
             "line": 4,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 424910000,
+              "duration": 407261500,
               "status": "passed"
             },
             "line": 5,
@@ -41,7 +41,7 @@
           },
           {
             "result": {
-              "duration": 2126492400,
+              "duration": 1777775600,
               "status": "passed"
             },
             "line": 6,
@@ -54,11 +54,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-12T22:42:14.426Z",
+        "start_timestamp": "2020-11-13T00:13:59.061Z",
         "before": [
           {
             "result": {
-              "duration": 7004467300,
+              "duration": 6992886100,
               "status": "passed"
             },
             "match": {
@@ -66,14 +66,14 @@
             }
           }
         ],
-        "line": 9,
-        "name": "add users with valid info",
+        "line": 29,
+        "name": "edit user info",
         "description": "",
-        "id": "creating-user-on--users-page;add-users-with-valid-info",
+        "id": "creating-user-on--users-page;edit-user-info",
         "after": [
           {
             "result": {
-              "duration": 2657622700,
+              "duration": 2687527400,
               "status": "passed"
             },
             "match": {
@@ -86,73 +86,37 @@
         "steps": [
           {
             "result": {
-              "duration": 245052700,
+              "duration": 429718900,
               "status": "passed"
             },
-            "line": 10,
-            "name": "click Add User",
+            "line": 30,
+            "name": "click Edit User",
             "match": {
-              "location": "com.library.step_definitions.CreateUser_StepDefs.click_Add_User()"
+              "location": "com.library.step_definitions.CreateUser_StepDefs.click_Edit_User()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1142481500,
+              "duration": 582188500,
               "status": "passed"
             },
-            "line": 11,
-            "name": "creates new user using following information",
+            "line": 31,
+            "name": "do some valid changes",
             "match": {
-              "location": "com.library.step_definitions.CreateUser_StepDefs.creates_new_user_using_following_information(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+              "location": "com.library.step_definitions.CreateUser_StepDefs.do_some_valid_changes(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
             },
             "rows": [
               {
                 "cells": [
                   "Full Name",
-                  "Mike Smith"
+                  "Smith Mike"
                 ]
               },
               {
                 "cells": [
                   "Email",
-                  "mikesmith555@email.com"
-                ]
-              },
-              {
-                "cells": [
-                  "Password",
-                  "123456"
-                ]
-              },
-              {
-                "cells": [
-                  "User Group",
-                  "Students"
-                ]
-              },
-              {
-                "cells": [
-                  "Status",
-                  "ACTIVE"
-                ]
-              },
-              {
-                "cells": [
-                  "Start Date",
-                  "11-04-2020"
-                ]
-              },
-              {
-                "cells": [
-                  "End Date",
-                  "11-04-2030"
-                ]
-              },
-              {
-                "cells": [
-                  "Address",
-                  "100 Same st, Anytown, USA, 10001"
+                  "smithmike@email.com"
                 ]
               }
             ],
@@ -160,26 +124,20 @@
           },
           {
             "result": {
-              "duration": 170914900,
+              "duration": 192980500,
               "status": "passed"
             },
-            "line": 20,
-            "name": "the message  \"the user has been created\" should be displayed",
+            "line": 34,
+            "name": "verify editing",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"the user has been created\"",
-                  "offset": 13
-                }
-              ],
-              "location": "com.library.step_definitions.CreateUser_StepDefs.the_message_should_be_displayed(java.lang.String)"
+              "location": "com.library.step_definitions.CreateUser_StepDefs.verify_editing()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@EUG16-253"
+            "name": "@EUG16-255"
           },
           {
             "name": "@EUG16-224"

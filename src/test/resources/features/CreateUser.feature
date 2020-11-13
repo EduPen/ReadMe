@@ -10,7 +10,7 @@ Feature: Creating user on  users page
     And click Add User
     And creates new user using following information
       | Full Name  | Mike Smith                       |
-      | Email      | mikesmith555@email.com           |
+      | Email      | mikesmith335@email.com           |
       | Password   | 123456                           |
       | User Group | Students                         |
       | Status     | ACTIVE                           |
