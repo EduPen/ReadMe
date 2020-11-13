@@ -52,6 +52,9 @@ public class UserPage extends BasePage{
     @FindBy(xpath = "(//table/tbody/tr/td/a)[1]")
     public  WebElement editUserbtn;
 
+    @FindBy(xpath = "(//table//td)[4]")
+    public WebElement firstRowEmail;
+
     public Select userGroup() {
         return new Select(addUserGroupDropDown);
     }
