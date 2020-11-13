@@ -79,7 +79,6 @@ public class CreateUser_StepDefs {
 
     @Then("verify closing the editing")
     public void verify_closing_the_editing() {
-        userPage.closeBtn.click();
         //Assertion ??
     }
 
