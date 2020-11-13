@@ -43,12 +43,12 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "add users with valid info",
+  "name": "edit user info",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@EUG16-253"
+      "name": "@EUG16-255"
     },
     {
       "name": "@EUG16-224"
@@ -56,41 +56,35 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "click Add User",
+  "name": "click Edit User",
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.library.step_definitions.CreateUser_StepDefs.click_Add_User()"
+  "location": "com.library.step_definitions.CreateUser_StepDefs.click_Edit_User()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "creates new user using following information",
+  "name": "do some valid changes",
   "rows": [
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
     {},
     {}
   ],
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.library.step_definitions.CreateUser_StepDefs.creates_new_user_using_following_information(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+  "location": "com.library.step_definitions.CreateUser_StepDefs.do_some_valid_changes(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the message  \"the user has been created\" should be displayed",
+  "name": "verify editing",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.library.step_definitions.CreateUser_StepDefs.the_message_should_be_displayed(java.lang.String)"
+  "location": "com.library.step_definitions.CreateUser_StepDefs.verify_editing()"
 });
 formatter.result({
   "status": "passed"
