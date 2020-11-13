@@ -22,8 +22,8 @@ Feature: Creating user on  users page
   @EUG16-254 @EUG16-224
   Scenario: Closing the adding user
     And click Add User
-    And click close button
-    Then verify closing the “adding”
+    And verify closing the “adding”
+    Then click close button
 
   @EUG16-255 @EUG16-224
   Scenario: edit user info
@@ -36,5 +36,5 @@ Feature: Creating user on  users page
   @EUG16-256 @EUG16-224
   Scenario: Closing the editing user
     And click Edit User
-    And click close button
-    Then verify closing the editing
+    And verify closing the editing
+    Then click close button
