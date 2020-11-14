@@ -39,22 +39,23 @@ public class AddBooksStepDefs {
         booksPage.bookCategoryOptions().selectByVisibleText(addBookOptions.get("Book Category"));
         booksPage.Description.sendKeys(addBookOptions.get("Description"));
 
-
-
-
     }
+
     @Then("the message {string} should be displayed")
     public void theMessageShouldBeDisplayed(String message) {
 
         new BooksPage().SaveChanges.click();
         Assert.assertEquals(new BooksPage().verifyMessage.getText(),message);
 
-
     }
+
+
     @And("click Edit Book")
     public void clickEditBook() {
         new BooksPage().EditBook.click();
     }
+
+
     @And("do some info changes")
     public void doSomeInfoChanges(Map<String,String> info) {
         BooksPage booksPage=new BooksPage();
@@ -62,6 +63,8 @@ public class AddBooksStepDefs {
         booksPage.Author.sendKeys(info.get("Author"));
 
     }
+
+
     @And("click save changes")
     public void clickSaveChanges() {
 
