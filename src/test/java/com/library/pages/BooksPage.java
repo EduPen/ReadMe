@@ -9,6 +9,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.List;
+
 public class BooksPage extends BasePage {
 
     @FindBy(css = "a.add_book_btn")
@@ -43,6 +45,27 @@ public class BooksPage extends BasePage {
     public  WebElement verifyMessage;
     @FindBy(css = "div.toast-message")
     public WebElement editVerifymessage;
+
+    @FindBy(css = "#book_categories>option")
+    public List<WebElement> bookCategoriesList;
+
+    @FindBy(xpath = "//input[@type='search']")
+    public WebElement searchBook;
+
+    @FindBy(xpath = "//table[@id='tbl_books']/tbody/tr[1]/td[3]")
+    public WebElement bookNameBox;
+
+    @FindBy(xpath = "//table[@id='tbl_books']/tbody/tr[1]/td[4]")
+    public WebElement authorNAmeBox;
+
+    @FindBy(xpath = "//a [@href='#dashboard']/ i")
+    public WebElement dashboardModule;
+
+    @FindBy(xpath = "//a [@href='#users']/ i")
+    public WebElement usersModule;
+
+    @FindBy(xpath = "//a [@href='#books']/ i")
+    public WebElement booksModule;
 
 
     public Select bookCategoryOptions(){
