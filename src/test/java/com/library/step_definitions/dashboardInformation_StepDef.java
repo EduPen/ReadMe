@@ -5,11 +5,11 @@ import io.cucumber.java.en.When;
 
 public class dashboardInformation_StepDef {
 
-    @When("navigate to books module")
+   /* @When("navigate to books module")
     public void navigate_to_books_module() {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
-    }
+    }*/
 
     @When("calculate total borrowed books number")
     public void calculate_total_borrowed_books_number() {

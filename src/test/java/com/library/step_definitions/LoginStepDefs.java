@@ -67,7 +67,7 @@ public class LoginStepDefs {
     }
 
 
-    @When("user login as {string}")
+  /*  @When("user login as {string}")
     public void user_login_as(String usertype) {
 
         Driver.get().get(ConfigurationReader.get("url"));
@@ -81,13 +81,13 @@ public class LoginStepDefs {
             password = ConfigurationReader.get("librarian_password");
 
         }
-    }
+    }*/
 
 
-/*
 
 
-    @When("title contains {string}")
+
+    /*@When("title contains {string}")
     public void titles_contains(String url) {
 
                 if () {
@@ -98,10 +98,8 @@ public class LoginStepDefs {
                     Assert.assertTrue(url.contains("books"));
 
                 }
-
-
-
-    }
+                 }
+     */
 
 
 
@@ -120,10 +118,5 @@ public class LoginStepDefs {
             }
         }
 }
-    }
 
-
-}
-
-*/
 }

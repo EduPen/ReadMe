@@ -2,10 +2,10 @@
 Feature:As a librarian, I should be able to add a book from the books page
 Background:
 	Given the user is on the login page
-	When user login as "usertype"
-	And navigate to books module
+	When user login as "librarian"
+	And navigate to "Books" module
 
-	@EUG16-268
+	@EUG16-268 @wip
 	Scenario: Librarian adds new book by filling up with valid credentials
 		 And click Add book button
 		 And creates new book using following information 
@@ -14,8 +14,8 @@ Background:
 		    |ISBN          |12345               |
 		    |Year          |2020                |
 		    |Book Category |Action and Adventure|
-		    |Description   |                    |
-		Then the message "the book has been added" should be displayed
+		    |Description   |added book          |
+		Then the message "The book has been created." should be displayed
 
 	@EUG16-269
 	Scenario: Edit the book information

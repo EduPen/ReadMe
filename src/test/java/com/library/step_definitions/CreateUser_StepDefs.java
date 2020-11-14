@@ -6,11 +6,11 @@ import io.cucumber.java.en.When;
 
 public class CreateUser_StepDefs {
 
-    @When("navigate to {string} module")
-    public void navigate_to_module(String string) {
+    //@When("navigate to {string} module")
+  //  public void navigate_to_module(String string) {
         // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
-    }
+      //  throw new io.cucumber.java.PendingException();
+    //}
 
     @When("click Add User")
     public void click_Add_User() {
@@ -36,11 +36,11 @@ public class CreateUser_StepDefs {
         throw new io.cucumber.java.PendingException();
     }
 
-    @When("click close button")
+  /*  @When("click close button")
     public void click_close_button() {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
-    }
+    }*/
 
     @Then("verify closing the “adding”")
     public void verify_closing_the_adding() {

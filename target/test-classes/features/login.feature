@@ -1,13 +1,14 @@
+
 @login
-Feature:login
+Feature:As a user, I should be able to login to the library app
 
   Background:
-  Given the user is on the login page
+    Given the user is on the login page
 
 
   @EUG16-259  @EUG16-224
-  Scenario Outline:verify login
-    When user enter <email> and enter <password>
+  Scenario Outline: verify login
+    When user enter "<email>" and enter "<password>"
     Then user logged in page
 
     Examples:
@@ -19,20 +20,26 @@ Feature:login
 
 
   @EUG16-257  @EUG16-224
-  Scenario:verify role login
-    When user login as “usertype”
-    Then title contains “page”
+  Scenario: verify role login
+    When user login as "usertype"
+    Then title contains "Library"
 
 
-  @EUG16-264  @EUG16-224
-  Scenario Outline:Enter with invalid credentials
+ @EUG16-224 @son
+  Scenario  Enter with invalid credentials
 
-    When Users login with invalid "<email>" and "<password>"
-    Then Error message "Sorry, Wrong Email or Password" display
-    Examples:
-      | email             | password |
-      | invalid           | FPEDLRY3 |
-      | student91@library | invalid  |
-      |                   | FPEDLRY3 |
-      | student91@library |          |
-      |                   |          |
+    When Users login with invalid "invalid" and "FPEDLRY3"
+    And user gets this message: "Please enter a valid email address."
+
+    When Users login with invalid "student91@library" and "invalid"
+    And user gets this message: "Sorry, Wrong Email or Password"
+
+    When Users login with invalid "" and "FPEDLRY3"
+    And user gets this message: "This field is required."
+
+    When Users login with invalid "student91@library" and ""
+    And user gets this message: "Sorry, Wrong Email or Password"
+
+    When Users login with invalid "" and ""
+    And user gets this message: "This field is required."
+

@@ -1,26 +1,23 @@
-Feature:
+Feature:As a user, I should be able to see several modules once login.
 
-	#US:As a user, I should be able to see several modules once login.
+  Background:
+    Given the user is on the login page
 
   @EUG16-263 @EUG16-224
-  Scenario Outline: Library App See several modules once login (librarians)
-
-    Given the user is on the login page
-    When user login as "usertype"
+  Scenario: Library App See several modules once login
+    When user login as "librarians"
     Then user see following modules
-      Examples:
-      |Dashboard|
-      | Books |
-      | Borrowing Books|
+      | Dashboard       |
+      | Books           |
+      | Borrowing Books |
 
   @EUG16-228 @EUG16-224
-  Scenario Outline: Library App See several modules once login (students)
-
-    Given the user is on the login page
-    When user login as "usertype"
+  Scenario: Library App See several modules once login
+    When user login as "students"
     Then user see following modules
-       Examples:
-      | Books |
-      | Borrowing Books|
+      | Books           |
+      | Borrowing Books |
+
+
 
 

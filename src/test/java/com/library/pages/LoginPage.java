@@ -15,11 +15,8 @@ public class LoginPage extends BasePage{
     @FindBy(tagName = "button")
     public WebElement loginBtn;
 
-
-    @FindBy(id="inputEmail-error")
-    public WebElement invalidemailaddress;
-    @FindBy(xpath = "//*[@id=\"login-form\"]/div[2]/div")
-    public WebElement invalidpassword;
+    @FindBy(xpath = "//div[@class='alert alert-danger']")
+    public WebElement errorMessage;
 
 
     public void login(String username, String password) {
