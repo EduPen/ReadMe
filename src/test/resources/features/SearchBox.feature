@@ -1,3 +1,4 @@
+@Search
 Feature: As a user ,I should able to search book
 
   Background:
