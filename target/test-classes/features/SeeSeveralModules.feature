@@ -1,4 +1,3 @@
-@module
 Feature:As a user, I should be able to see several modules once login.
 
   Background:
@@ -6,8 +5,8 @@ Feature:As a user, I should be able to see several modules once login.
 
   @EUG16-263 @EUG16-224
   Scenario: Library App See several modules once login
-    When user login as "librarian"
-    Then librarian see following modules
+    When user login as "librarians"
+    Then user see following modules
       | Dashboard       |
       | Books           |
       | Borrowing Books |
@@ -15,7 +14,7 @@ Feature:As a user, I should be able to see several modules once login.
   @EUG16-228 @EUG16-224
   Scenario: Library App See several modules once login
     When user login as "students"
-    Then students see following modules
+    Then user see following modules
       | Books           |
       | Borrowing Books |
 
