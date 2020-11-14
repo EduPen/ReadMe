@@ -2,18 +2,18 @@ Feature: Creating user on  users page
 
   Background:
     Given the user is on the login page
-    When user login as "librarian"
-    And navigate to user module
+    When user login as "usertype"
+    And navigate to "users" module
 
   @EUG16-253 @EUG16-224
   Scenario: add users with valid info
     And click Add User
     And creates new user using following information
       | Full Name  | Mike Smith                       |
-      | Email      | mikesmith335@email.com           |
-      | Password   | 123456                           |
+      | Email      | mikesmith@email.com              |
+      | Password   | 12345                            |
       | User Group | Students                         |
-      | Status     | ACTIVE                           |
+      | Status     | Active                           |
       | Start Date | 11-04-2020                       |
       | End Date   | 11-04-2030                       |
       | Address    | 100 Same st, Anytown, USA, 10001 |
@@ -22,8 +22,8 @@ Feature: Creating user on  users page
   @EUG16-254 @EUG16-224
   Scenario: Closing the adding user
     And click Add User
-    And verify closing the “adding”
-    Then click close button
+    And click close button
+    Then verify closing the “adding”
 
   @EUG16-255 @EUG16-224
   Scenario: edit user info
@@ -36,5 +36,5 @@ Feature: Creating user on  users page
   @EUG16-256 @EUG16-224
   Scenario: Closing the editing user
     And click Edit User
-    And verify closing the editing
-    Then click close button
+    And click close button
+    Then verify closing the editing

@@ -2,18 +2,18 @@ Feature: Creating user on  users page
 
   Background:
     Given the user is on the login page
-    When user login as "librarian"
-    And navigate to user module
+    When user login as "usertype"
+    And navigate to "users" module
 
   @EUG16-253 @EUG16-224
   Scenario: add users with valid info
     And click Add User
     And creates new user using following information
       | Full Name  | Mike Smith                       |
-      | Email      | mikesmith335@email.com           |
-      | Password   | 123456                           |
+      | Email      | mikesmith@email.com              |
+      | Password   | 12345                            |
       | User Group | Students                         |
-      | Status     | ACTIVE                           |
+      | Status     | Active                           |
       | Start Date | 11-04-2020                       |
       | End Date   | 11-04-2030                       |
       | Address    | 100 Same st, Anytown, USA, 10001 |

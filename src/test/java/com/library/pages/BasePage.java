@@ -15,7 +15,7 @@ import java.util.List;
 
 public abstract class  BasePage {
 
-    @FindBy(css = "span.title-level-1")
+    @FindBy(css = "span.title")
     public List<WebElement> menuOptions;
 
     @FindBy(css = "div[class='loader-mask shown']")
@@ -90,10 +90,10 @@ public abstract class  BasePage {
      * For example: if tab is equals to Activities, and module equals to Calls,
      * Then method will navigate user to this page: http://qa2.vytrack.com/call/
      *
-     * @param tab
+     * @paramtab
      * @param module
      */
-    public void navigateToModule(String tab, String module) {
+   /* public void navigateToModule(String tab, String module) {
         String tabLocator = "//span[normalize-space()='" + tab + "' and contains(@class, 'title title-level-1')]";
         String moduleLocator = "//span[normalize-space()='" + module + "' and contains(@class, 'title title-level-2')]";
         try {
@@ -111,6 +111,16 @@ public abstract class  BasePage {
         } catch (Exception e) {
 //            BrowserUtils.waitForStaleElement(Driver.get().findElement(By.xpath(moduleLocator)));
             BrowserUtils.clickWithTimeOut(Driver.get().findElement(By.xpath(moduleLocator)),  5);
+        }
+    }*/
+    public void navigatetoModule(String module) {
+        String moduleLocator="//span[normalize-space()='"+module+"' and contains(@class, 'title')]";
+        try {
+            BrowserUtils.waitForClickablility(By.xpath(moduleLocator), 5);
+            WebElement tabElement = Driver.get().findElement(By.xpath(moduleLocator));
+            new Actions(Driver.get()).moveToElement(tabElement).pause(200).doubleClick(tabElement).build().perform();
+        } catch (Exception e) {
+            BrowserUtils.clickWithWait(By.xpath(moduleLocator), 5);
         }
     }
 
