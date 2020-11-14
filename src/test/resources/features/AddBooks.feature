@@ -1,9 +1,9 @@
-
+@Elif
 Feature:As a librarian, I should be able to add a book from the books page
 Background:
 	Given the user is on the login page
-	When user login as "usertype"
-	And navigate to books module
+	When user login as "librarian"
+	And navigate to "Books" module
 
 	@EUG16-268
 	Scenario: Librarian adds new book by filling up with valid credentials
@@ -14,8 +14,8 @@ Background:
 		    |ISBN          |12345               |
 		    |Year          |2020                |
 		    |Book Category |Action and Adventure|
-		    |Description   |                    |
-		Then the message "the book has been added" should be displayed
+		    |Description   |added book          |
+		Then the message "The book has been created." should be displayed
 
 	@EUG16-269
 	Scenario: Edit the book information
@@ -29,8 +29,9 @@ Background:
 	@EUG16-270
 	Scenario: Cancel the editing
 		And click Edit Book
-		And click close button
-		Then verify the closing edit
+		And verify the closing edit
+		Then click close button
+
 
 	@EUG16-271
 	Scenario: Cancel the add book by clicking the Cancel button

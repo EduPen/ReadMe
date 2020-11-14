@@ -1,16 +1,12 @@
 Feature: As a user ,I should able to search book
 
-  Background:
-    Given the user is on the login page
-    When user login as "librarian"
-    And navigate to books module
-
-
   @EUG16-258
   Scenario: searching book with different categories
+    Given the user is on the login page
+    When user login as "usertype"
+    And navigate to "books module" and click book categories
     Then categories list should have following names:
-      | ALL                     |
-      | Action and Adventure    |
+      | Action and   Adventure  |
       | Anthology               |
       | Classic                 |
       | Comic and Graphic Novel |
@@ -29,17 +25,19 @@ Feature: As a user ,I should able to search book
       | Short Story             |
       | Essay                   |
       | Memoir                  |
-      | Poetry                  |
 
-
-  @EUG16-260
-  Scenario Outline: searching a specific book by column names
-
-    Then verify the search with following "<columnInfo>" information
+  Scenario Outline : searching a specific book by column names
+    @EUG16-260
+    Given the user is on the login page
+    When user login as "usertype"
+    And navigate to "books module"
+    And search by <columnInfo>
+    Then verify the search with following column information
     Examples:
-      | columnInfo        |
-      | The Idiot         |
-      | Fyodor Dostoevsky |
+      | columnInfo    |
+      | 12345         |
+      | Selenium Book |
+      | Jamal D       |
 
 
 
