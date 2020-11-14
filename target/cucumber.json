@@ -1,0 +1,101 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-13T17:51:13.144Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9549289700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Librarian should see three modules on Dashboard page",
+        "description": " \u003d   Given the user is on the login page",
+        "id": "as-a-librarian--i-should-able-to-see-three-modules-on-dashboard-page;librarian-should-see-three-modules-on-dashboard-page",
+        "after": [
+          {
+            "result": {
+              "duration": 3433161800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 968600900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user login as \"librarian\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"librarian\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.LoginStepDefs.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2165338800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "users see following modules",
+            "match": {
+              "location": "com.library.step_definitions.Modules_StepDefs.users_see_following_modules(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Users"
+                ]
+              },
+              {
+                "cells": [
+                  "Books"
+                ]
+              },
+              {
+                "cells": [
+                  "Borrowed Books"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@EUG16-251"
+          },
+          {
+            "name": "@EUG16-224"
+          }
+        ]
+      }
+    ],
+    "name": "As a librarian, I should able to see three modules on Dashboard page",
+    "description": "",
+    "id": "as-a-librarian--i-should-able-to-see-three-modules-on-dashboard-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Modules.feature",
+    "tags": []
+  }
+]
