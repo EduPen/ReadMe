@@ -23,8 +23,6 @@ public class CreateUser_StepDefs {
     @When("click Add User")
     public void click_Add_User() {
         userPage.AddUser.click();
-
-
     }
 
     @When("creates new user using following information")
