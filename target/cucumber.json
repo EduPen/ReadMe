@@ -1,0 +1,628 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 185737200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 445729000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user login as \"librarian\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"librarian\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.AddBooksStepDefs.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2371904200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "navigate to \"Books\" module",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Books\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.library.step_definitions.AddBooksStepDefs.navigateToModule(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-14T16:16:39.176Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7254542600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Librarian adds new book by filling up with valid credentials",
+        "description": "",
+        "id": "as-a-librarian--i-should-be-able-to-add-a-book-from-the-books-page;librarian-adds-new-book-by-filling-up-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 2787607700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2057729300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "click Add book button",
+            "match": {
+              "location": "com.library.step_definitions.AddBooksStepDefs.clickAddBookButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 741181300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "creates new book using following information",
+            "match": {
+              "location": "com.library.step_definitions.AddBooksStepDefs.createsNewBookUsingFollowingInformation(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Book Name",
+                  "Selenium Book"
+                ]
+              },
+              {
+                "cells": [
+                  "Author",
+                  "Jamal D"
+                ]
+              },
+              {
+                "cells": [
+                  "ISBN",
+                  "12345"
+                ]
+              },
+              {
+                "cells": [
+                  "Year",
+                  "2020"
+                ]
+              },
+              {
+                "cells": [
+                  "Book Category",
+                  "Action and Adventure"
+                ]
+              },
+              {
+                "cells": [
+                  "Description",
+                  "added book"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 256518400,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the message \"The book has been created.\" should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"The book has been created.\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.library.step_definitions.AddBooksStepDefs.theMessageShouldBeDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Elif"
+          },
+          {
+            "name": "@EUG16-268"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 166258400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 383934000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user login as \"librarian\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"librarian\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.AddBooksStepDefs.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2131486100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "navigate to \"Books\" module",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Books\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.library.step_definitions.AddBooksStepDefs.navigateToModule(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-14T16:16:55.347Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6204108400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Edit the book information",
+        "description": "",
+        "id": "as-a-librarian--i-should-be-able-to-add-a-book-from-the-books-page;edit-the-book-information",
+        "after": [
+          {
+            "result": {
+              "duration": 2793152700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 520151100,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "click Edit Book",
+            "match": {
+              "location": "com.library.step_definitions.AddBooksStepDefs.clickEditBook()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 326510800,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "do some info changes",
+            "match": {
+              "location": "com.library.step_definitions.AddBooksStepDefs.doSomeInfoChanges(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Book Name",
+                  "Toni Morrison"
+                ]
+              },
+              {
+                "cells": [
+                  "Author",
+                  "Beloved"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 85264900,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "click save changes",
+            "match": {
+              "location": "com.library.step_definitions.AddBooksStepDefs.clickSaveChanges()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 168322400,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "verify the book info edited",
+            "match": {
+              "location": "com.library.step_definitions.AddBooksStepDefs.verifyTheBookInfoEdited()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Elif"
+          },
+          {
+            "name": "@EUG16-269"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 182024400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 386950900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user login as \"librarian\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"librarian\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.AddBooksStepDefs.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2242694900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "navigate to \"Books\" module",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Books\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.library.step_definitions.AddBooksStepDefs.navigateToModule(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-14T16:17:08.137Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6337716500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "Cancel the editing",
+        "description": "",
+        "id": "as-a-librarian--i-should-be-able-to-add-a-book-from-the-books-page;cancel-the-editing",
+        "after": [
+          {
+            "result": {
+              "duration": 2775220100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 524388900,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "click Edit Book",
+            "match": {
+              "location": "com.library.step_definitions.AddBooksStepDefs.clickEditBook()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 162886900,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "verify the closing edit",
+            "match": {
+              "location": "com.library.step_definitions.AddBooksStepDefs.verifyTheClosingEdit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 49527500,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "click close button",
+            "match": {
+              "location": "com.library.step_definitions.AddBooksStepDefs.clickCloseButton()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Elif"
+          },
+          {
+            "name": "@EUG16-270"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 196223100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.library.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 471152600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user login as \"librarian\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"librarian\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.library.step_definitions.AddBooksStepDefs.user_login_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2621857100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "navigate to \"Books\" module",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Books\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.library.step_definitions.AddBooksStepDefs.navigateToModule(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-14T16:17:20.806Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6198340900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 37,
+        "name": "Cancel the add book by clicking the Cancel button",
+        "description": "",
+        "id": "as-a-librarian--i-should-be-able-to-add-a-book-from-the-books-page;cancel-the-add-book-by-clicking-the-cancel-button",
+        "after": [
+          {
+            "result": {
+              "duration": 2783817000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2062236700,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "click Add book button",
+            "match": {
+              "location": "com.library.step_definitions.AddBooksStepDefs.clickAddBookButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 185213900,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "click close button",
+            "match": {
+              "location": "com.library.step_definitions.AddBooksStepDefs.clickCloseButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9350200,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "user is on the Books Module",
+            "match": {
+              "location": "com.library.step_definitions.AddBooksStepDefs.userIsOnTheBooksModule()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Elif"
+          },
+          {
+            "name": "@EUG16-271"
+          }
+        ]
+      }
+    ],
+    "name": "As a librarian, I should be able to add a book from the books page",
+    "description": "",
+    "id": "as-a-librarian--i-should-be-able-to-add-a-book-from-the-books-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/AddBooks.feature",
+    "tags": [
+      {
+        "name": "@Elif",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
