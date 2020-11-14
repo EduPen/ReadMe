@@ -17,22 +17,6 @@ import java.util.Map;
 
 public class AddBooksStepDefs {
 
-    @When("user login as {string}")
-    public boolean user_login_as(String usertype){
-        Driver.get().get(ConfigurationReader.get("url"));
-        String username = null;
-        String password = null;
-        if (usertype.equals("students")) {
-            username = ConfigurationReader.get("student_username");
-            password = ConfigurationReader.get("student_password");
-        } else if (usertype.equals("librarian")) {
-            username = ConfigurationReader.get("librarian_username");
-            password = ConfigurationReader.get("librarian_password");
-
-        }
-        new LoginPage().login(username,password);
-        return false;
-    }
     @And("navigate to {string} module")
     public void navigateToModule(String module) {
 
@@ -72,34 +56,37 @@ public class AddBooksStepDefs {
         new BooksPage().EditBook.click();
     }
     @And("do some info changes")
-    public void doSomeInfoChanges(Map<String,Object> info) {
-
+    public void doSomeInfoChanges(Map<String,String> info) {
+        BooksPage booksPage=new BooksPage();
+        booksPage.BookName.sendKeys(info.get("Book Name"));
+        booksPage.Author.sendKeys(info.get("Author"));
 
     }
     @And("click save changes")
     public void clickSaveChanges() {
 
+        new BooksPage().SaveChanges.click();
     }
 
     @Then("verify the book info edited")
     public void verifyTheBookInfoEdited() {
-
-    }
-
-    @And("click close button")
-    public void clickCloseButton() {
-
+        Assert.assertEquals(new BooksPage().editVerifymessage.getText(),"The book has been updated.");
     }
 
     @Then("verify the closing edit")
     public void verifyTheClosingEdit() {
 
+        Assert.assertTrue(new BooksPage().Close.isEnabled());
     }
-
+    @And("click close button")
+    public void clickCloseButton() {
+      new BooksPage().Close.click();
+    }
 
     @Then("user is on the Books Module")
     public void userIsOnTheBooksModule() {
 
+        Assert.assertEquals(Driver.get().getCurrentUrl(), "http://library2.cybertekschool.com/#books");
     }
 
 

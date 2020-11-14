@@ -41,6 +41,8 @@ public class BooksPage extends BasePage {
     public WebElement Description;
     @FindBy(css = "div.toast.toast-success")
     public  WebElement verifyMessage;
+    @FindBy(css = "div.toast-message")
+    public WebElement editVerifymessage;
 
 
     public Select bookCategoryOptions(){

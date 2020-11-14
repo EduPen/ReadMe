@@ -1,11 +1,11 @@
-
+@Elif
 Feature:As a librarian, I should be able to add a book from the books page
 Background:
 	Given the user is on the login page
 	When user login as "librarian"
 	And navigate to "Books" module
 
-	@EUG16-268 @wip
+	@EUG16-268
 	Scenario: Librarian adds new book by filling up with valid credentials
 		 And click Add book button
 		 And creates new book using following information 
@@ -29,8 +29,9 @@ Background:
 	@EUG16-270
 	Scenario: Cancel the editing
 		And click Edit Book
-		And click close button
-		Then verify the closing edit
+		And verify the closing edit
+		Then click close button
+
 
 	@EUG16-271
 	Scenario: Cancel the add book by clicking the Cancel button
