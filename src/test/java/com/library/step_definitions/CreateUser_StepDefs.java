@@ -12,18 +12,13 @@ import java.util.Map;
 
 public class CreateUser_StepDefs {
 
-    //@When("navigate to {string} module")
-  //  public void navigate_to_module(String string) {
-        // Write code here that turns the phrase above into concrete actions
-      //  throw new io.cucumber.java.PendingException();
-    //}
 
     BooksPage booksPage = new BooksPage();
     UserPage userPage = new UserPage();
 
     @When("navigate to user module")
     public void navigate_to_user_module() {
-       // booksPage.usersModule.click();
+        booksPage.usersModule.click();
     }
 
 
@@ -53,17 +48,6 @@ public class CreateUser_StepDefs {
     public void the_message_should_be_displayed(String string) {
         Assert.assertTrue(userPage.message.isDisplayed());
     }
-
-  /*  @When("click close button")
-    public void click_close_button() {
-<<<<<<< HEAD
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
-    }*/
-
-      /*  BrowserUtils.waitFor(2);
-        userPage.closeBtn.click();*/
-
 
 
     @Then("verify closing the adding")
