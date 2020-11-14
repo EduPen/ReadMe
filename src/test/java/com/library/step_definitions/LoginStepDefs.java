@@ -67,7 +67,7 @@ public class LoginStepDefs {
     }
 
 
-  /*  @When("user login as {string}")
+    @When("user login as {string}")
     public void user_login_as(String usertype) {
 
         Driver.get().get(ConfigurationReader.get("url"));
@@ -81,16 +81,12 @@ public class LoginStepDefs {
             password = ConfigurationReader.get("librarian_password");
 
         }
-    }*/
+    }
 
-
-
-
-
-    /*@When("title contains {string}")
+    @When("title contains {string}")
     public void titles_contains(String url) {
 
-                if () {
+               /* if () {
                   String url = Driver.get().getCurrentUrl();
                     Assert.assertTrue(url.contains("dashboard"));
                 } else if () {
@@ -98,13 +94,12 @@ public class LoginStepDefs {
                     Assert.assertTrue(url.contains("books"));
 
                 }
-                 }
-     */
+                 }*/}
 
 
 
 
-    @Then("user gets error messages")
+   /* @Then("user gets error messages")
     public void user_gets_error_messages(List<String> errorMessages) {
         String actualpage = Driver.get().findElement(By.id("inputEmail-error")).getText();
         for (int i = 0; i < errorMessages.size(); i++) {
@@ -117,6 +112,6 @@ public class LoginStepDefs {
 
             }
         }
-}
-
-}
+     }
+    */
+    }
