@@ -1,6 +1,7 @@
 package com.library.pages;
 
 import com.library.utilities.Driver;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
@@ -41,7 +42,13 @@ public class DashboardPage extends BasePage {
     @FindBy(css = "h6.text-muted")
     public List<WebElement> moduleNames;
 
+    public void goModule(String moduleName){
 
+        Driver.get().findElement(By.xpath("//span[text()='"+moduleName+"']")).click();
+
+
+
+    }
 
 
 

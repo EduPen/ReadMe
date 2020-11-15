@@ -72,4 +72,20 @@ public class BooksPage extends BasePage {
        return new Select(BookCategory);
     }
 
+
+    @FindBy(name = "tbl_books_length")
+    public List<WebElement> recordsDropdown;
+
+    @FindBy(name = "tbl_books_length")
+    public WebElement showRecord;
+
+
 }
+
+
+
+
+
+
+
+
