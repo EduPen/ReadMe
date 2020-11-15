@@ -3,7 +3,7 @@ Feature:Borrowing books
 
   Background:
     Given the user is on the login page
-    When user login as "usertype"
+    When user login as "students"
 
 
 	#As a student, I should be able to borrow a book from the Books page

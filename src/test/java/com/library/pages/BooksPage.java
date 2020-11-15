@@ -73,7 +73,7 @@ public class BooksPage extends BasePage {
     }
 
 
-    @FindBy(name = "tbl_books_length")
+    @FindBy(xpath = "//select[@name='tbl_books_length']/option")
     public List<WebElement> recordsDropdown;
 
     @FindBy(name = "tbl_books_length")
