@@ -24,8 +24,8 @@ public class dashboardInformation_StepDef {
         booksPage.dashboardModule.click();
     }
 
-    @Then("verify the barrowed books number are equal")
-    public void verify_the_barrowed_books_number_are_equal() {
+    @Then("verify the borrowed books number are equal")
+    public void verify_the_borrowed_books_number_are_equal() {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }

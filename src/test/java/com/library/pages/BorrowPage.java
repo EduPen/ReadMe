@@ -6,27 +6,25 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.List;
 import java.util.NoSuchElementException;
 
-public class BorrowPage {
-
-    @FindBy(xpath = "//th [@class=\"sorting_asc\"]")
-    public WebElement BorrowedBy;
-
-    @FindBy(xpath = "//*[@id=\"books\"]/div[1]/div[2]")
-    public  WebElement BorrowBook;
+public class BorrowPage extends  BasePage {
 
 
+    @FindBy(linkText = "Borrow Books")
+    public  WebElement bookReturn;
 
+    @FindBy(xpath = "//table[@id='tbl_books']/tbody/tr[1]/td[1]/a")
+    public WebElement bookBorrow;
 
-    public void BorrowedBy(){
+    @FindBy(className = "toast-message")
+    public  WebElement borrowingMessage;
 
-        BorrowedBy.click();
+    @FindBy(className = "toast-message")
+    public  WebElement returningMessage;
 
-    }
-    public void BorrowedBook(){
-        BorrowBook.click();
-    }
-
+    @FindBy( xpath= "//a[@href='#borrowing-books']")
+    public  WebElement BorrowingBook;
 
 }
